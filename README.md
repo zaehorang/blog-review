@@ -20,6 +20,6 @@
 
 ## 🗂️ 기록
 
-| # | 날짜 | 회사 | 글 / 한 줄 | 태그 | 노트 |
-|---|------|------|-----------|------|------|
-| 1 | 2026-07-30 | Nextree | WebSocket 채팅 설계 — 소켓은 "신호"만, 데이터는 재조회 → 검증 통일 + 오프라인 복구 | `backend` `아키텍처` `실시간` | [보기](./reviews/2026-07-30-nextree-websocket-chat.md) |
+| # | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트 |
+|---|------|------|-----------|-------|------|------|
+| 1 | 2026-07-30 | Nextree | [WebSocket을 활용한 채팅 서비스 설계](https://www.nextree.io/websocketeul-hwalyonghan-caeting-seobiseu-seolgye/) | 소켓은 "신호"만, 데이터는 재조회 → 검증 통일 + 오프라인 복구 | `backend` `아키텍처` `실시간` | [보기](./reviews/2026-07-30-nextree-websocket-chat.md) |
