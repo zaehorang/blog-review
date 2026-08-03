@@ -5,3 +5,4 @@
 각 항목: 무엇을 · 왜 · 어느 글에서.
 
 - [ ] **나만의 second brain 만들기** — 회사 단위 말고 개인 노트·북마크·코드조각에 Topic 아이디어를 얹어본다: 출처를 공통 포맷(ContentUnit)으로 정규화 → 신뢰 상태(fresh·stale·disputed) 부여 → 충돌은 숨기지 말고 노출. _왜: '답을 만드는 것'보다 '믿을 수 있게' 만드는 걸 내 것으로. 이 blog-review 레포가 이미 그 씨앗._ — [토스 Topic](reviews/2026-08-03-toss-llm-context-topic.md)
+- [ ] **미니 실시간 알림 데모** — 소켓은 "새 글 생김" 신호만 push하고 목록은 조회 API로 재요청하게 만든다. 앱 껐다 켜도(재접속) 조회 한 번으로 최신 복구되는지 직접 체감. _왜: "소켓이 진실을 나르나, 신호만 나르나"를 손으로 확인._ — [Nextree 웹소켓](reviews/2026-07-30-nextree-websocket-chat.md)
