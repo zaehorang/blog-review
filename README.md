@@ -11,6 +11,7 @@
 기업 테크 블로그를 **하루 1개**(주중) 리뷰한다.
 
 - 리뷰 노트: [`reviews/`](./reviews/)
+- 해볼 것(실습): [`TRY.md`](./TRY.md) · 남은 질문: [`QUESTIONS.md`](./QUESTIONS.md)
 - 진행 방식·규칙: [`AGENT.md`](./AGENT.md) · 또는 `/blog-review <링크>`
 
 ## 📊 현황
