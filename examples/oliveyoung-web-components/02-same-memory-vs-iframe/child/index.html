@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>child (다른 origin)</title></head>
+<body style="font-family:sans-serif;padding:20px;">
+  <p id="status">부모의 postMessage를 기다리는 중...</p>
+  <script>
+    window.addEventListener('message', (e) => {
+      document.getElementById('status').textContent =
+        `postMessage로 받은 값: ${JSON.stringify(e.data)}`;
+    });
+  </script>
+</body>
+</html>

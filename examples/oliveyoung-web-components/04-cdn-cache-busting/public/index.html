@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>04. CDN 캐시 버스팅</title>
+<style>body{font-family:sans-serif;padding:40px;max-width:640px;line-height:1.6}
+.box{background:#eee;padding:12px;border-radius:6px;margin-top:8px}
+code{background:#ddd;padding:2px 6px;border-radius:4px}</style>
+</head>
+<body>
+<h1>CDN 캐시 버스팅 확인</h1>
+<p>이 페이지는 <code>app.js</code>를 <code>Cache-Control: max-age=3600</code>(1시간)으로 불러옵니다.</p>
+<div class="box" id="output">로딩 중...</div>
+<script src="app.js"></script>
+
+<h2>실습 순서</h2>
+<ol>
+  <li>지금 화면에 <b>"버전 1"</b>이 보이는지 확인.</li>
+  <li><code>public/app.js</code> 파일을 열어 <code>'버전 1'</code>을 <code>'버전 2'</code>로 바꾸고 저장.</li>
+  <li>이 페이지를 <b>일반 새로고침</b>(⌘R)만 해보기 → 아직도 "버전 1"이면 캐시가 살아있는 것.</li>
+  <li>이 파일(<code>index.html</code>)의 <code>&lt;script src="app.js"&gt;</code>를<br>
+      <code>&lt;script src="app.js?v=2"&gt;</code>로 바꾸고 저장 → 새로고침하면 <b>즉시 "버전 2"</b>가 뜨는지 확인.</li>
+</ol>
+<p>→ 4번이 실무의 "콘텐츠 해시 파일명" 방식과 같은 원리: URL 자체를 바꿔서 캐시를 무조건 미스나게 만드는 것.</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><title>정상 백오피스</title>
+<style>body{font-family:sans-serif;padding:40px;max-width:640px;line-height:1.6}</style>
+</head>
+<body>
+<h1>✅ 정상 백오피스</h1>
+<p>부모가 인증된 <code>api</code> 인스턴스를 메모리에 쥐고 있다가, 웹 컴포넌트에 주입합니다.</p>
+<order-widget></order-widget>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="widget.js"></script>
+<script>
+  // 이 객체는 "부모 시스템의 메모리"에만 존재한다 — widget.js 안엔 이런 게 없다.
+  const authedApi = {
+    get(path) {
+      return `✅ [인증됨] GET ${path} → 200 OK (부모가 가진 토큰으로 실제 호출됨)`;
+    },
+  };
+  document.querySelector('order-widget').api = authedApi;
+</script>
+</body>
+</html>

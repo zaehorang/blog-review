@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>01. Shadow DOM 스타일 격리</title>
+<style>
+  /* 전역 스타일 — 페이지의 모든 button을 빨갛게 만들려는 의도 */
+  body { font-family: sans-serif; padding: 40px; max-width: 640px; line-height: 1.6; }
+  button { color: red; border: 2px solid red; padding: 8px 16px; font-size: 16px; background: white; cursor: pointer; }
+  h2 { margin-top: 40px; }
+  .box { background: #eee; padding: 12px; border-radius: 6px; margin-top: 8px; }
+</style>
+</head>
+<body>
+  <h1>Shadow DOM 스타일 격리 확인</h1>
+  <p>이 페이지 전역 CSS는 <code>button { color: red }</code>로 모든 버튼을 빨갛게 만들려고 합니다.</p>
+
+  <h2>1) 일반 button — 전역 CSS 그대로 적용</h2>
+  <button>일반 버튼 (빨강이어야 함)</button>
+
+  <h2>2) 웹 컴포넌트 안의 button — Shadow DOM</h2>
+  <my-widget></my-widget>
+  <div class="box">→ 전역에서 button을 빨갛게 만들었는데, 컴포넌트 안 버튼도 빨간지 확인하세요. (안 새는 게 정상)</div>
+
+  <h2>3) Shadow 안에 수동으로 폰트 주입해보기</h2>
+  <button onclick="injectFont()">공통 폰트를 shadow 안에 주입</button>
+  <div class="box">→ 부모의 전역 스타일은 자동으로 안 들어가므로, 필요하면 이렇게 <b>직접</b> 넣어줘야 합니다.</div>
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script>
+    const MyWidget = Vue.defineCustomElement({
+      styles: [`
+        button { color: blue; border: 2px solid blue; padding: 8px 16px; font-size: 16px; background: white; cursor: pointer; }
+      `],
+      template: `<button>컴포넌트 내부 버튼 (자체 스타일: 파랑)</button>`
+    });
+    customElements.define('my-widget', MyWidget);
+
+    function injectFont() {
+      const widget = document.querySelector('my-widget');
+      const style = document.createElement('style');
+      style.textContent = `button { font-family: 'Comic Sans MS', cursive; font-size: 20px; }`;
+      widget.shadowRoot.appendChild(style);
+      alert('shadow root 안에 <style>을 직접 넣었습니다. 컴포넌트 버튼 폰트가 바뀌었는지 확인하세요.');
+    }
+  </script>
+</body>
+</html>
