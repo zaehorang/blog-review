@@ -8,10 +8,12 @@
 
 ## 실행
 ```bash
-# 위험한 as — 컴파일은 통과하는지, 실행하면 어떻게 되는지
-tsc mission.ts --strict --noEmit   # 에러 없이 통과하는지 확인
+# 전체 파일 체크 — 에러가 몇 개, 어느 줄에서 나는지 확인 (raw as number 줄은 안 나올 것)
+tsc mission.ts --strict --noEmit
+
+# 실행해서 any 캐스팅이 런타임에 터지는 걸 확인
 tsc mission.ts --strict
-node mission.js                     # 여기서 크래시 나는 걸 확인
+node mission.js
 
 # request(method1) 줄을 주석 처리하고 다시 컴파일하면?
 # 반대로 request(method2) 줄만 남기면?
