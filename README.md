@@ -15,14 +15,15 @@
 - 진행 방식·규칙: [`AGENT.md`](./AGENT.md) · 또는 `/blog-review <링크>`
 
 ## 📊 현황
-- **총 리뷰:** 6개
-- **최근 리뷰:** 2026-08-06
+- **총 리뷰:** 7개
+- **최근 리뷰:** 2026-08-07
 - **진행:** 주중(월~금)
 
 ## 🗂️ 기록
 
 | # | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트 |
 |---|------|------|-----------|-------|------|------|
+| 7 | 2026-08-07 | 여기어때 | [늙어버린 당신의 AI](https://techblog.gccompany.co.kr/%EB%8A%99%EC%96%B4%EB%B2%84%EB%A6%B0-%EB%8B%B9%EC%8B%A0%EC%9D%98-ai-7dc9cc8a7ca7) | 에러를 안 내는 고장이 제일 오래 산다 — 튜닝값 0으로 지우거나 목록에 적어두거나, 셋째는 모르고 늙는 것뿐 | `ml` `platform` `마이그레이션` `조직/프로세스` | [보기](./reviews/2026-08-07-yeogieottae-ai-asset-aging.md) |
 | 6 | 2026-08-06 | 원티드랩 | [AI-Driven Development의 시대](https://medium.com/wantedjobs/ai-driven-development%EC%9D%98-%EC%8B%9C%EB%8C%80-4036e171b6eb) | 두 번째 안전장치는 첫 번째와 성질이 달라야 한다 — 그리고 빨라진 건지 남에게 옮겨간 건지를 물어라 | `ios` `조직/프로세스` `아키텍처` `테스트` | [보기](./reviews/2026-08-06-wantedlab-agent-loop.md) |
 | 5 | 2026-08-05 | Nextree | [타입스크립트(TypeScript) 파헤치기](https://www.nextree.io/taibseukeuribteu-typescript-pahecigi/) | 타입은 컴파일 타임 약속일 뿐 — 체크와 변환은 서로 안 막고, 런타임 간극은 Zod 같은 SoT 검증으로 메운다 | `frontend` `데이터정합성` `타입시스템` | [보기](./reviews/2026-08-05-nextree-typescript.md) |
 | 4 | 2026-08-04 | 올리브영 | [프레임워크에 구애받지 않는 통합 백오피스 구축하기](https://oliveyoung.tech/2026-07-14/building-integrated-backoffice-with-vue-web-components/) | 공유 컴포넌트는 파일에 비밀을 담지 말고, 실행 시점에 부모가 메모리로 직접 쥐여줘라 | `frontend` `아키텍처` `보안` | [보기](./reviews/2026-08-04-oliveyoung-vue-web-components.md) |
