@@ -1,5 +1,7 @@
 # 미션 4 — `as`가 컴파일러를 속이는 법, 그리고 속이지 않는 법
 
+> 어느 리뷰에서: [`../../../reviews/2026-08-05-nextree-typescript.md`](../../../reviews/2026-08-05-nextree-typescript.md)
+
 `mission.ts`에 두 종류의 `as`가 있다: 위험한 것(`any`를 거쳐 진짜 문자열을 number로 우기기)과 안전한 것(`as const`로 타입을 좁히기).
 
 ## 예상해보기

@@ -39,11 +39,8 @@ tags: [ml, 아키텍처, 관측성]
 - ✅ hash 비교는 스크립트로 충분 → **비결정적 판단(모델)은 꼭 필요한 곳만.** (글 전체의 척추)
 
 **⑤ NLI (Natural Language Inference)**
-- 🔧 **교정.** "평가 기법, 사람이 판단할 단계로 분류"가 아님.
-  NLI는 두 문장의 관계를 **모델이 3분류**하는 것: entailment(뒷받침) / contradiction(모순) / neutral.
-  - Faithfulness: "주장 vs 원문 span"이 entailment인가 → 근거가 진짜 받쳐주는지 자동 판정.
-  - Consistency: 두 근거가 contradiction인가 → 충돌 자동 감지.
-  즉 NLI는 **관계 자동 판정기(앞단)**, 사람에게 넘기는 `disputed` 분류는 그 **뒤의 후속 흐름**. 둘은 다른 층.
+- 🔧 **교정.** "평가 기법, 사람이 판단할 단계로 분류"가 아니다 → [NLI](../concepts/nli.md)는 **관계 자동 판정기(앞단)**이고, 사람에게 넘기는 `disputed` 분류는 그 **뒤의 후속 흐름**. 둘은 다른 층.
+- 이 글에서 붙는 자리: Faithfulness(근거가 진짜 받쳐주나)와 Consistency(두 근거가 모순인가) 두 축이 **바로 이 판정기로 자동화**된다. ④의 "비결정적 판단은 꼭 필요한 곳만"과 짝 — hash로 될 건 hash로, **의미 판단만 모델로.**
 
 ---
 

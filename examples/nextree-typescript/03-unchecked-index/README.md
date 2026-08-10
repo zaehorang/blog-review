@@ -1,5 +1,7 @@
 # 미션 3 — 배열 범위 초과, 컴파일 타임에 잡기
 
+> 어느 리뷰에서: [`../../../reviews/2026-08-05-nextree-typescript.md`](../../../reviews/2026-08-05-nextree-typescript.md)
+
 `numbers[5]`는 존재하지 않는 인덱스인데, TS는 기본적으로 이걸 그냥 `number` 타입으로 인식한다(`undefined`일 수 있다는 걸 타입에 반영 안 함).
 
 ## 예상해보기

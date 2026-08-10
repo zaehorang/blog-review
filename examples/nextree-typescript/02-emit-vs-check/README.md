@@ -1,5 +1,7 @@
 # 미션 2 — 체크는 실패해도 변환은 성공한다
 
+> 어느 리뷰에서: [`../../../reviews/2026-08-05-nextree-typescript.md`](../../../reviews/2026-08-05-nextree-typescript.md)
+
 `mission.ts`엔 일부러 타입 에러(`double("5")`)가 있다. 대화에서 나온 "타입 에러가 있어도 tsc는 기본적으로 JS를 emit한다"를 직접 확인한다.
 
 ## 예상해보기
