@@ -19,6 +19,7 @@
 | [라우트 트리 vs 네비게이션 스택](route-tree-vs-navigation-stack.md) | 공간(무엇이 존재하나) vs 시간(어떻게 쌓였나) |
 | [MVVM](mvvm.md) | ViewModel이 UI 상태를 갖는 건 정상 — **절단면이지 복제선이 아니다** |
 | [Props](props.md) | `properties`의 약자 (`propagation` 아님) |
+| [디자인 토큰](design-token.md) | 컴포넌트가 값이 아니라 **이름**을 참조 — 일관성이 목적, 이식성은 부산물 |
 | [WebAssembly](webassembly.md) | 브라우저 확장 시도 중 유일한 생존자 — JS를 대체 안 하고 나란히 |
 
 ## 타입 / 컴파일
@@ -48,6 +49,7 @@
 | [Breaking change & semver](breaking-change.md) | 판정 기준은 크기가 아니라 **"남의 코드가 손 안 대고 돌아가나"** |
 | [docstring](docstring.md) | 기계가 파싱하는 규격 주석 — 문서·MCP를 여기서 파생시키면 안 어긋난다 |
 | [모노레포](monorepo.md) | 배포를 없앤 게 아니라 **개발 루프에서 배포를 걷어낸** 것 |
+| [플러그인](framework-plugin.md) | 런타임 주입형은 프레임워크와 함께 죽고, 빌드타임 생성형은 결과물만 남는다 |
 | [증분 빌드와 피드백 루프](incremental-build.md) | 루프가 빠르면 에이전트가 더 자주 시도하고 스스로 교정한다 |
 | [agent-device](agent-device.md) | 접근성 트리로 앱을 읽는 UI 자동화 — 재현 가능해서 E2E로 승격 |
 
