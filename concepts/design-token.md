@@ -30,6 +30,26 @@ range(1, 1000).reduce((acc, n) => { acc[n] = n + 'px'; return acc }, {})
 
 > 토큰화는 디자인 일관성을 위해 하는 일인데, **몇 년 뒤 프레임워크 교체 가능 여부까지 결정한다.**
 
+## 다른 스택에서 같은 판정 — UIKit → SwiftUI
+
+같은 코드베이스 안에서도 갈린다. **프레임워크가 아니라 보관 위치가 가른다:**
+
+```swift
+// ✅ 옮겨진다 — 값이 Assets Catalog(선언적 데이터)에 있음
+static let brandBlue = UIColor(named: "BrandBlue")!
+// SwiftUI에서 Color("BrandBlue") — 같은 파일, 같은 값, 다크모드 대응까지 그대로
+
+// ❌ 안 옮겨진다 — 값이 컴포넌트 레이아웃 코드에 박혀 있음
+stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 18)
+heightAnchor.constraint(equalToConstant: 48)
+```
+
+**`UIColor`라는 타입은 UIKit이지만 값은 UIKit 안에 없다.** extension은 데이터를 읽는 얇은 어댑터 한 겹일 뿐이라 다시 쓰면 그만이고, 색은 하나도 안 바뀐다.
+반대로 `18`, `48`은 Auto Layout이 UIKit이라서 못 옮기는 게 아니다 — `Spacing.buttonHorizontal` 같은 상수였다면 UIKit 코드여도 값은 살아남는다.
+
+> **타입이 프레임워크 것인지와, 자산이 프레임워크 안에 갇혔는지는 다른 질문이다.**
+
+
 ---
 
 **관련 개념:** [플러그인](framework-plugin.md) · [웹 컴포넌트](web-components.md)

@@ -21,6 +21,14 @@ window.$numWithCommas(value)
 
 같은 부류: Express 미들웨어, DI 컨테이너에 등록된 전역 서비스, 런타임 몽키패칭.
 
+**iOS 대응물** — UIKit 컴포넌트가 이러고 있으면 정확히 같은 종속이다:
+```swift
+UIApplication.shared.keyWindow?.endEditing(true)
+AppDelegate.shared.analytics.log("shown")
+UIViewController.topMost()?.present(self, animated: true)   // 사내 extension
+```
+`Package.swift`를 아무리 봐도 *"이 컴포넌트는 AppDelegate가 살아있어야 동작함"*은 안 적혀 있다.
+
 ### ② 빌드타임 생성형 — 결과물만 남고 자기는 사라진다
 
 ```js
