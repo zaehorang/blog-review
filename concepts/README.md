@@ -20,6 +20,7 @@
 | [MVVM](mvvm.md) | ViewModel이 UI 상태를 갖는 건 정상 — **절단면이지 복제선이 아니다** |
 | [Props](props.md) | `properties`의 약자 (`propagation` 아님) |
 | [디자인 토큰](design-token.md) | 컴포넌트가 값이 아니라 **이름**을 참조 — 일관성이 목적, 이식성은 부산물 |
+| [tailwind-merge](tailwind-merge.md) | 클래스 이름이 아니라 CSS 역할과 단방향 충돌 관계로 앞의 무효 클래스를 제거 |
 | [WebAssembly](webassembly.md) | 브라우저 확장 시도 중 유일한 생존자 — JS를 대체 안 하고 나란히 |
 
 ## 타입 / 컴파일
