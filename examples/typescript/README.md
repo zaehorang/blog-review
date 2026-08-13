@@ -1,4 +1,4 @@
-# Nextree 타입스크립트 파헤치기 — 실습 미션
+# 타입스크립트 핵심 동작 실습 미션
 
 > 어느 리뷰에서 왔나: [`../../reviews/2026-08-05-nextree-typescript.md`](../../reviews/2026-08-05-nextree-typescript.md)
 > 원문: https://www.nextree.io/taibseukeuribteu-typescript-pahecigi/

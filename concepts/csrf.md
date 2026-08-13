@@ -16,4 +16,4 @@
 - **SameSite 쿠키** — 브라우저가 크로스사이트 요청에 쿠키를 안 싣게 함
 
 **관련:** [origin](origin.md)
-**나온 곳:** [올리브영 Vue Web Components](../reviews/2026-08-04-oliveyoung-vue-web-components.md) · [실습](../examples/oliveyoung-web-components/05-csrf/)
+**나온 곳:** [올리브영 Vue Web Components](../reviews/2026-08-04-oliveyoung-vue-web-components.md) · [실습](../examples/web-components/05-csrf/)

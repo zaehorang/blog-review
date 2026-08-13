@@ -1,4 +1,4 @@
-# 올리브영 웹 컴포넌트 리뷰 — 실습 랩
+# 웹 컴포넌트 실습 랩
 
 > 어느 리뷰에서 왔나: [`../../reviews/2026-08-04-oliveyoung-vue-web-components.md`](../../reviews/2026-08-04-oliveyoung-vue-web-components.md)
 > 원문: https://oliveyoung.tech/2026-07-14/building-integrated-backoffice-with-vue-web-components/

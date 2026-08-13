@@ -17,4 +17,4 @@
 → 외부에서 들어온 값이라면 `as` 대신 [Zod](zod.md) 같은 런타임 검증으로 실제로 확인해야 한다.
 
 **관련:** [Zod](zod.md)
-**나온 곳:** [Nextree 타입스크립트](../reviews/2026-08-05-nextree-typescript.md) · [실습](../examples/nextree-typescript/04-type-assertion/)
+**나온 곳:** [Nextree 타입스크립트](../reviews/2026-08-05-nextree-typescript.md) · [실습](../examples/typescript/04-type-assertion/)

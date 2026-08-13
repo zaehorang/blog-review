@@ -1,4 +1,4 @@
-# 여기어때 tailwind-merge prefix — 실습 랩
+# tailwind-merge prefix 실습 랩
 
 > 어느 리뷰에서 왔나: [`../../reviews/2026-08-12-yeogieottae-tailwind-merge-prefix.md`](../../reviews/2026-08-12-yeogieottae-tailwind-merge-prefix.md)
 > 원문: https://techblog.gccompany.co.kr/%ED%95%AD%EA%B3%B5-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B5%AC%EC%B6%95%EA%B8%B0-3-10-prefix%EB%A5%BC-%EB%B6%99%EC%9D%B4%EC%9E%90-tailwind-merge%EA%B0%80-%EC%A1%B0%EC%9A%A9%ED%9E%88-%EA%B9%A8%EC%A1%8C%EB%8B%A4-f5b250afc2a9
@@ -19,7 +19,7 @@
 ## 한 번에 실행
 
 ```bash
-cd examples/yeogieottae-tailwind-merge-prefix
+cd examples/tailwind-merge-prefix
 node run-all.js
 ```
 

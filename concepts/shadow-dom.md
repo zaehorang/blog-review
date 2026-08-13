@@ -12,4 +12,4 @@
 즉 "필요한 스타일을 직접 찾아 입혀줘야 한다"가 맞는 건 **밖→안 방향**뿐이다. 컴포넌트 자기 스타일은 알아서 격리된다. 부모 디자인 토큰을 쓰려면 shadow root 안에 다시 주입해야 한다.
 
 **관련:** [웹 컴포넌트](web-components.md)
-**나온 곳:** [올리브영 Vue Web Components](../reviews/2026-08-04-oliveyoung-vue-web-components.md) · [실습](../examples/oliveyoung-web-components/01-shadow-dom/)
+**나온 곳:** [올리브영 Vue Web Components](../reviews/2026-08-04-oliveyoung-vue-web-components.md) · [실습](../examples/web-components/01-shadow-dom/)

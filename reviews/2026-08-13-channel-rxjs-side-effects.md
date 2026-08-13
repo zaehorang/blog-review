@@ -105,7 +105,7 @@ Boot B:         API 요청 ─────────── 소켓 연결
 
 ## 🛠️ 직접 만들어본 것
 
-- [RxJS 사이드 이펙트 생명주기 실습](../examples/channel-rxjs-side-effects/) — 같은 `boot A → shutdown → boot B`를 조기 완료 구조와 `concatMap` 직렬화 구조로 실행한다.
+- [RxJS 사이드 이펙트 생명주기 실습](../examples/rxjs-side-effects/) — 같은 `boot A → shutdown → boot B`를 조기 완료 구조와 `concatMap` 직렬화 구조로 실행한다.
 - 문제 버전은 첫 boot의 소켓 인증이 다음 shutdown과 충돌하는 로그를, RxJS 버전은 소켓 인증까지 complete된 뒤 다음 호출이 시작되는 로그를 보여준다.
 
 ## 🎯 오늘 챙길 한 줄

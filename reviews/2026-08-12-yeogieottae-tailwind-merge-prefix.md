@@ -99,7 +99,7 @@ twMerge('yf-p-16 yf-px-8') // → 'yf-p-16 yf-px-8'
 
 ## 🛠️ 직접 만들어본 것
 
-- [tailwind-merge prefix 실습 랩](../examples/yeogieottae-tailwind-merge-prefix/) — 의존성 없이 실행되는 5개 미션으로 기본 분류 실패, prefix 제거 방식의 한계, `classGroups` 세분화, 단방향 충돌, variant 범위를 확인한다.
+- [tailwind-merge prefix 실습 랩](../examples/tailwind-merge-prefix/) — 의존성 없이 실행되는 5개 미션으로 기본 분류 실패, prefix 제거 방식의 한계, `classGroups` 세분화, 단방향 충돌, variant 범위를 확인한다.
 - 실제 패키지를 그대로 쓰지 않고 핵심 분류 모델만 작은 코드로 노출했다. `classGroups`나 충돌표 한 줄을 바꾸며 결과가 왜 달라지는지 직접 볼 수 있다.
 
 ## 🎯 오늘 챙길 한 줄

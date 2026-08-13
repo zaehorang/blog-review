@@ -27,4 +27,4 @@
 크롤러는 최초 HTML(`<goods-detail></goods-detail>`)만 보면 빈 껍데기 → JS 실행 후에야 콘텐츠가 채워진다. 로그인 이후 화면이면 크롤러가 도달조차 못 하므로 이 한계가 발동하지 않는다.
 
 **관련:** [Shadow DOM](shadow-dom.md)
-**나온 곳:** [올리브영 Vue Web Components](../reviews/2026-08-04-oliveyoung-vue-web-components.md) · [실습](../examples/oliveyoung-web-components/)
+**나온 곳:** [올리브영 Vue Web Components](../reviews/2026-08-04-oliveyoung-vue-web-components.md) · [실습](../examples/web-components/)
