@@ -60,7 +60,7 @@ tags: [ios, 조직/프로세스, 리팩터링, 테스트]
 5. **강제할 규칙은 스킬/가드레일로.** 공유된 "취향"이 아니라 코드에 각인된 "제약"으로. (예: 디자인 토큰만 허용)
 
 ## 🛠️ 직접 만들어본 것
-글의 원리를 최소 작동 뼈대로 옮겨 `examples/momento/`에 실제 파일로 구현.
+글의 원리를 최소 작동 뼈대로 옮겨 `examples/agent-scaffolding/`에 실제 파일로 구현.
 - `CLAUDE.md`(라우터: 트리거+순서+절대규칙) / `.claude/workflows`(create-pr, figma-to-view, deploy-firebase) / `checklists`(REQUIRED·OPTIONAL·CONDITIONAL) / `references`(architecture, team-configuration — 지시 없이 사실만).
 - 다른 프로젝트에 재사용 가능: `references/`만 그 프로젝트 사실로 갈아끼우면 됨.
 

@@ -1,4 +1,4 @@
-# Momento iOS Development Assistant
+# iOS Development Assistant
 
 > 이 파일은 **라우터**다. 내용을 담지 않는다. "언제 → 어디로"만 그린다.
 > 실제 절차/검증/사실은 `.claude/` 하위 문서에 위임한다.
