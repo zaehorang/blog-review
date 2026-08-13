@@ -16,14 +16,15 @@
 - 진행 방식·규칙: [`AGENT.md`](./AGENT.md) · 또는 `/blog-review <링크>`
 
 ## 📊 현황
-- **총 리뷰:** 10개 · **개념:** 29개 · **실습:** 4개 프로젝트
-- **최근 리뷰:** 2026-08-12
+- **총 리뷰:** 11개 · **개념:** 33개 · **실습:** 5개 프로젝트
+- **최근 리뷰:** 2026-08-13
 - **진행:** 주중(월~금)
 
 ## 🗂️ 기록
 
 | # | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트 |
 |---|------|------|-----------|-------|------|------|
+| 11 | 2026-08-13 | 채널톡 | [RxJS로 우아하게 사이드 이펙트 통제하기](https://tech.channel.io/kr/articles/8b85a1b8) | 비동기 인터페이스의 완료는 첫 응답이 아니라 약속한 모든 사이드 이펙트가 끝난 시점이다 | `frontend` `동시성` `아키텍처` `리팩터링` | [보기](./reviews/2026-08-13-channel-rxjs-side-effects.md) |
 | 10 | 2026-08-12 | 여기어때 | [항공 프론트엔드 구축기 (3/10): prefix를 붙이자 tailwind-merge가 조용히 깨졌다](https://techblog.gccompany.co.kr/%ED%95%AD%EA%B3%B5-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B5%AC%EC%B6%95%EA%B8%B0-3-10-prefix%EB%A5%BC-%EB%B6%99%EC%9D%B4%EC%9E%90-tailwind-merge%EA%B0%80-%EC%A1%B0%EC%9A%A9%ED%9E%88-%EA%B9%A8%EC%A1%8C%EB%8B%A4-f5b250afc2a9) | 도구를 확장하면 앞선 선택을 지킬 수 있지만, 도구가 숨겨 관리하던 규칙까지 물려받는다 | `frontend` `아키텍처` `리팩터링` | [보기](./reviews/2026-08-12-yeogieottae-tailwind-merge-prefix.md) |
 | 9 | 2026-08-11 | 여기어때 | [항공 프론트엔드 구축기 (2/10): Vue2 디자인 시스템을 React로 옮기기](https://techblog.gccompany.co.kr/%ED%95%AD%EA%B3%B5-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B5%AC%EC%B6%95%EA%B8%B0-2-10-vue2-%EB%94%94%EC%9E%90%EC%9D%B8-%EC%8B%9C%EC%8A%A4%ED%85%9C%EC%9D%84-react%EB%A1%9C-%EC%98%AE%EA%B8%B0%EA%B8%B0-b16284a907e9) | 이식성은 목표가 아니라 좋은 경계 설계의 부산물 — 그리고 종속은 의존성 목록에 안 적힌 곳에 숨는다 | `frontend` `마이그레이션` `아키텍처` `리팩터링` | [보기](./reviews/2026-08-11-yeogieottae-vue2-to-react-design-system.md) |
 | 8 | 2026-08-10 | 여기어때 | [항공 프론트엔드 구축기 (1/10): 웹, 모바일웹, 웹뷰를 코드 한 벌로](https://techblog.gccompany.co.kr/%ED%95%AD%EA%B3%B5-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B5%AC%EC%B6%95%EA%B8%B0-1-10-%EC%9B%B9-%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%9B%B9-%EC%9B%B9%EB%B7%B0%EB%A5%BC-%EC%BD%94%EB%93%9C-%ED%95%9C-%EB%B2%8C%EB%A1%9C-ca9bec34dddf) | 절충안이 두 극단보다 나쁠 수 있다 — "이건 공통인가"를 매번 사람이 판단해야 하면 그건 공유선이 아니다 | `frontend` `아키텍처` `마이그레이션` `조직/프로세스` | [보기](./reviews/2026-08-10-yeogieottae-one-codebase-web-webview.md) |

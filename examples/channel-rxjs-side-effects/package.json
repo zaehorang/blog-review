@@ -1,0 +1,13 @@
+{
+  "name": "channel-rxjs-side-effects-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bug": "node src/legacy-race.js",
+    "fixed": "node src/rxjs-serialized.js",
+    "start": "npm run bug && npm run fixed"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.2"
+  }
+}

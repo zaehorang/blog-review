@@ -22,6 +22,8 @@
 | [디자인 토큰](design-token.md) | 컴포넌트가 값이 아니라 **이름**을 참조 — 일관성이 목적, 이식성은 부산물 |
 | [tailwind-merge](tailwind-merge.md) | 클래스 이름이 아니라 CSS 역할과 단방향 충돌 관계로 앞의 무효 클래스를 제거 |
 | [WebAssembly](webassembly.md) | 브라우저 확장 시도 중 유일한 생존자 — JS를 대체 안 하고 나란히 |
+| [RxJS](rxjs.md) | 시간에 따른 값을 스트림으로 보고 완료·취소·동시성 정책을 조합 |
+| [프론트엔드 상태 관리](frontend-state-management.md) | Redux·Zustand·Jotai는 상태 모델, RxJS는 비동기 흐름 모델 |
 
 ## 타입 / 컴파일
 
@@ -42,6 +44,7 @@
 | [CDN](cdn.md) | 캐시 버스팅은 TTL 우회가 아니라 **TTL을 신경 안 써도 되게** 만드는 것 |
 | [오브젝트 스토리지](object-storage.md) | S3는 AWS 상품명 — GCS·Blob Storage가 같은 것 |
 | [CSRF](csrf.md) | 쿠키가 악성사이트발 요청에도 자동으로 실리는 것이 공격의 정체 |
+| [서비스 디스커버리와 게이트웨이](service-discovery-gateway.md) | 현재 살아 있는 서버를 찾고 정책에 맞는 목적지로 안내 |
 
 ## 개발 프로세스 / 도구
 
@@ -53,6 +56,7 @@
 | [플러그인](framework-plugin.md) | 런타임 주입형은 프레임워크와 함께 죽고, 빌드타임 생성형은 결과물만 남는다 |
 | [증분 빌드와 피드백 루프](incremental-build.md) | 루프가 빠르면 에이전트가 더 자주 시도하고 스스로 교정한다 |
 | [agent-device](agent-device.md) | 접근성 트리로 앱을 읽는 UI 자동화 — 재현 가능해서 E2E로 승격 |
+| [미들웨어](middleware.md) | 입력과 최종 처리자 사이에서 인증·로깅·사이드 이펙트 등을 확장 |
 
 ## AI / ML
 
