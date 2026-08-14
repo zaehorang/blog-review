@@ -26,9 +26,43 @@
 2. **뼈대만 깐다** — WebFetch로 메타데이터 + 중립 요약(내 해석 배제) + 글의 뼈대(중심 주장 1개, 이득, 미해결)만. 여기서 평가·의견 넣지 말 것.
 3. **사용자가 날것 투척** — 이해한 흐름 / 반응 / **모르겠는 것·질문**. (이 단계가 제일 값지다. 막히면 질문 1개만 나와도 성공.)
 4. **교정 대화** — 각 항목에 `✅ 맞음` / `🔧 교정` / `💡 한 단계 더` 표기로 답한다. 꼬리물기 환영. 정확성 최우선(틀린 걸 확인해주지 말 것).
-5. **노트로 묶고 커밋한다** — 아래 형식으로 `reviews/`에 저장 → **개념은 `concepts/`로 분리** → (해당되면 `TRY.md`/`QUESTIONS.md` 갱신) → `README.md` 로그/현황 갱신 → **자동 커밋**(아래 규칙).
+5. **노트로 묶고 커밋한다** — 아래 형식으로 `reviews/`에 저장 → **이 단계에서만 raw 사용자 입력을 일괄 저장** → **개념은 `concepts/`로 분리** → (해당되면 `TRY.md`/`QUESTIONS.md` 갱신) → `README.md` 로그/현황 갱신 → **자동 커밋**(아래 규칙).
    - README 로그 행 컬럼: `# | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트`
    - "글 (원문)"은 **글 제목에 원문 URL 링크**를 건다: `[글 제목](원문링크)`. "노트"는 `reviews/` 파일 링크.
+
+### raw 사용자 입력은 마지막에 한 번만 저장한다
+
+raw는 대화 백업이 아니라 **교정 전 사고의 원문 데이터**다. 질문에 답하는 중에는 파일을 쓰거나 스크립트를 실행하지 말고, 5단계에서 노트를 저장할 때 한 번에 처리한다.
+
+- **수집 경계:** 블로그 URL을 받은 시점부터 해당 리뷰를 처음 저장해 푸시하는 시점까지.
+- **포함:** 사용자가 직접 보낸 URL, 이해, 생각, 질문, 요청. 복수 성격이면 `kinds`에 여러 값을 넣는다.
+- **제외:** 에이전트 답변, 도구 출력, 원문 글 본문, 최종 노트에서 새로 생성한 문장.
+- **원문 불변:** `text`의 맞춤법·띄어쓰기·줄바꿈·표현을 요약하거나 고치지 않는다.
+- **예외:** 자격증명·토큰·비밀키와 사용자가 비공개로 지정한 문구만 `[REDACTED: 유형]`으로 치환한다. 이때 `redacted: true`와 `redaction_types`를 남긴다.
+- **소급 금지:** 기존 리뷰는 원문을 재구성하지 않는다. raw는 이 규칙을 도입한 뒤의 새 리뷰부터 생성한다.
+
+저장 순서:
+1. 리뷰 frontmatter에 `raw: ../raw/<review-id>.jsonl`을 넣고 리뷰 파일을 먼저 만든다.
+2. 대화에서 사용자 입력만 순서대로 모아 `/tmp/blog-review-raw-<review-id>.json`에 아래 manifest로 쓴다.
+3. `python3 .claude/skills/blog-review/scripts/write_raw.py --review reviews/<review-id>.md --input /tmp/blog-review-raw-<review-id>.json --output raw/<review-id>.jsonl`을 실행한다.
+4. 스크립트가 비밀정보 후보를 발견하면 원문을 제거하지 말고 manifest에서 해당 값만 `[REDACTED: credential]`로 바꾸고 메타데이터를 설정한 뒤 재실행한다.
+5. 성공·실패와 관계없이 임시 manifest를 지우고, 생성된 JSONL과 리뷰를 같은 커밋에 포함한다.
+
+manifest 형식:
+```json
+{
+  "review_id": "2026-08-14-company-topic",
+  "entries": [
+    {
+      "kinds": ["understanding", "question"],
+      "text": "사용자가 실제로 입력한 원문",
+      "redacted": false
+    }
+  ]
+}
+```
+
+허용 `kinds`: `source` `understanding` `thought` `question` `request`. 스크립트가 `schema_version: 1`과 1부터 시작하는 `sequence`를 부여한다. 세부 스키마와 분석 예시는 `raw/README.md`를 따른다.
 
 ### 개념은 노트에 쓰지 않는다 — `concepts/`로 뺀다
 범용 용어·기술 개념(웹뷰가 뭔가, breaking change 판정 기준, Zod가 뭔가)은 **글이 없어도 재사용되고 다음 글에서 또 나온다.** 노트에 흩어놓으면 인출이 안 되고 설명이 중복된다.
@@ -72,6 +106,7 @@ date: YYYY-MM-DD
 company: 회사 (작성자)
 source: 원문 링크
 tags: [도메인, 문제패턴]   # 아래 어휘에서 2~4개
+raw: ../raw/YYYY-MM-DD-회사-키워드.jsonl  # raw 규칙 도입 후 새 리뷰만
 ---
 ```
 
