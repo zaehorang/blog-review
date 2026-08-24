@@ -64,3 +64,5 @@
 |---|---|
 | [NLI](nli.md) | entailment/contradiction/neutral **자동 판정기** — 사람에게 넘기는 단계가 아님 |
 | [벤더 (vendor)](vendor.md) | 모델 공급사 — "벤더가 먼저 지우라고 말하고 있다"의 그 벤더 |
+| [임베딩](embedding.md) | 텍스트를 벡터로 **재는** 변환 — 정보를 더하는 게 아니다 |
+| [청킹](chunking.md) | 조각을 어떻게 만드느냐가 잴 대상 자체를 바꾼다 — RAG 품질의 진짜 상한 |
