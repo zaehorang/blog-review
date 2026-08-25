@@ -17,14 +17,15 @@
 - 진행 방식·규칙: [`AGENT.md`](./AGENT.md) · 또는 `/blog-review <링크>`
 
 ## 📊 현황
-- **총 리뷰:** 13개 · **개념:** 35개 · **실습:** 5개 프로젝트
-- **최근 리뷰:** 2026-08-24
+- **총 리뷰:** 14개 · **개념:** 35개 · **실습:** 5개 프로젝트
+- **최근 리뷰:** 2026-08-25
 - **진행:** 주중(월~금)
 
 ## 🗂️ 기록
 
 | # | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트 |
 |---|------|------|-----------|-------|------|------|
+| 14 | 2026-08-25 | SK DEVOCEAN | [Claude Code Dynamic Workflow 쉽게 이해하기](https://devocean.sk.com/blog/techBoardDetail.do?id=168424&boardType=techBlog&isShared=Y) | 결정적 제어(코드)와 확률적 실행(에이전트)을 분리하면 중간 결과가 컨텍스트가 아니라 명시적 상태에 남는다 | `platform` `ml` `아키텍처` `확장성` | [보기](./reviews/2026-08-25-devocean-dynamic-workflow.md) |
 | 13 | 2026-08-24 | LY Corporation | [보안 업무를 위한 AI 에이전트 플랫폼 「SAGE」 개발기 1편: 판단은 사람에게 남기는 설계](https://techblog.lycorp.co.jp/ko/ai-agent-platform-sage-dev-log-part-1) | 위임 가능한 업무를 고르지 말고, 위임 판단이 필요 없는 절단면(판단 준비/판단)을 찾아라 | `ml` `platform` `보안` `조직/프로세스` | [보기](./reviews/2026-08-24-ly-sage-security-agent.md) |
 | 12 | 2026-08-18 | 미리디 | [AI로 QA 업무를 자동화한 방법: n8n부터 E2E 테스트 자동화까지](https://medium.com/miridih/ai%EB%A1%9C-qa-%EC%97%85%EB%AC%B4%EB%A5%BC-%EC%9E%90%EB%8F%99%ED%99%94%ED%95%9C-%EB%B0%A9%EB%B2%95-n8n%EB%B6%80%ED%84%B0-e2e-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99%ED%99%94%EA%B9%8C%EC%A7%80-2b8abe65b0de) | 도구가 아니라 문제의 모양을 가져와, 반복과 전달을 걷어내 사람의 판단 시간을 돌려줘라 | `platform` `테스트` `조직/프로세스` | [보기](./reviews/2026-08-18-miridih-qa-automation.md) |
 | 11 | 2026-08-13 | 채널톡 | [RxJS로 우아하게 사이드 이펙트 통제하기](https://tech.channel.io/kr/articles/8b85a1b8) | 비동기 인터페이스의 완료는 첫 응답이 아니라 약속한 모든 사이드 이펙트가 끝난 시점이다 | `frontend` `동시성` `아키텍처` `리팩터링` | [보기](./reviews/2026-08-13-channel-rxjs-side-effects.md) |
