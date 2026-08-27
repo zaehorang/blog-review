@@ -24,6 +24,9 @@
 | [WebAssembly](webassembly.md) | 브라우저 확장 시도 중 유일한 생존자 — JS를 대체 안 하고 나란히 |
 | [RxJS](rxjs.md) | 시간에 따른 값을 스트림으로 보고 완료·취소·동시성 정책을 조합 |
 | [프론트엔드 상태 관리](frontend-state-management.md) | Redux·Zustand·Jotai는 상태 모델, RxJS는 비동기 흐름 모델 |
+| [composition 이벤트 (IME 조합)](composition-event.md) | 조합 중 값과 확정 값을 구분 — iOS Safari는 한글에서 아예 안 쏜다 |
+| [Reflow / Repaint](reflow-repaint.md) | 비용은 변경 지점이 아니라 **그걸 감싼 레이아웃 단위 크기**에 비례 |
+| [윈도잉 / 가상 스크롤](windowing.md) | 버퍼 단위가 작을수록 reflow 범위는 줄지만 높이 추정 부담은 는다 |
 
 ## 타입 / 컴파일
 
