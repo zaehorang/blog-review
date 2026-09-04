@@ -60,6 +60,9 @@
 | [증분 빌드와 피드백 루프](incremental-build.md) | 루프가 빠르면 에이전트가 더 자주 시도하고 스스로 교정한다 |
 | [agent-device](agent-device.md) | 접근성 트리로 앱을 읽는 UI 자동화 — 재현 가능해서 E2E로 승격 |
 | [미들웨어](middleware.md) | 입력과 최종 처리자 사이에서 인증·로깅·사이드 이펙트 등을 확장 |
+| [에이전틱 워크플로우 루프](agentic-workflow-loop.md) | 위임·관찰·개입·검토 — 사람의 일이 코딩에서 루프 운영으로 이동 |
+| [완료 기준 (acceptance criteria)](acceptance-criteria.md) | 끝을 참/거짓 판정 가능한 문장으로 미리 쓴 것 — 미래의 수용 테스트 |
+| [Record and replay](record-and-replay.md) | 시연해 자동화 — API 없는 시스템의 임시 다리, 표면 구조에 묶여 깨진다 |
 
 ## AI / ML
 
