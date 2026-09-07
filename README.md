@@ -13,6 +13,7 @@
 - 리뷰 노트: [`reviews/`](./reviews/) — 글마다 "나라면 어떻게 봤나 / 어디서 틀렸나"
 - 날것 기록: [`raw/`](./raw/) — 리뷰 대화에서 내가 입력한 이해·생각·질문 원문(JSONL)
 - 개념 사전: [`concepts/`](./concepts/README.md) — 글과 무관하게 재사용되는 용어·기술 개념
+- 동작 원리 시각화: [`explainers/`](./explainers/README.md) — 내부 흐름을 단계별로 따라가는 HTML
 - 실습 코드: [`examples/`](./examples/) · 해볼 것: [`TRY.md`](./TRY.md) · 남은 질문: [`QUESTIONS.md`](./QUESTIONS.md)
 - 진행 방식·규칙: [`AGENT.md`](./AGENT.md) · 또는 `/blog-review <링크>`
 
