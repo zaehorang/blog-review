@@ -421,17 +421,17 @@
     color: var(--muted);
   }
 
-  /* 용어 사전 */
-  .glossary { margin-top: 2.6rem; }
-  .glossary h2 {
-    font-family: "Archivo", system-ui, sans-serif;
-    font-weight: 600; font-size: 1.05rem; margin: 0 0 .2rem;
+  /* 용어 — 그 말이 처음 나온 단계 안에 둔다 */
+  .step-terms { border-top: 1px dashed var(--line); padding-top: 1rem; }
+  .step-terms h3 {
+    font-family: "IBM Plex Mono", monospace; font-size: .72rem;
+    letter-spacing: .12em; text-transform: uppercase;
+    color: var(--muted); font-weight: 500; margin: 0 0 .6rem;
   }
-  .glossary .hint { color: var(--muted); font-size: .85rem; margin: 0 0 .9rem; }
   .terms { display: grid; gap: .4rem; }
   @media (min-width: 780px) { .terms { grid-template-columns: 1fr 1fr; align-items: start; } }
   details.term {
-    background: var(--surface);
+    background: var(--surface-2);
     border: 1px solid var(--line);
     border-radius: 8px;
     padding: .6rem .85rem;
@@ -473,7 +473,7 @@
       <span><span class="swatch ext"></span> <b>남이 만든 패키지</b> — 실행 때 주소로 받아온다</span>
     </div>
     <p class="standfirst" style="margin-top:.9rem;font-size:.85rem">
-      모르는 용어가 나오면 <a href="#glossary" style="color:var(--accent)">맨 아래 용어 사전</a>을 펼쳐보면 된다.
+      모르는 용어는 <b>그 말이 처음 나온 단계 아래</b>에 접혀 있다. 막히면 그 자리에서 펼쳐보면 된다.
     </p>
   </header>
 
@@ -532,74 +532,12 @@
       </div>
 
       <div id="panels"></div>
+      <div id="terms"></div>
     </div>
     <div class="stage-foot">
       <button id="prev" type="button">← 이전</button>
       <span class="count" id="count"></span>
       <button id="next" type="button" class="primary">다음 →</button>
-    </div>
-  </section>
-
-  <section class="glossary" id="glossary">
-    <h2>모르는 말이 나왔다면</h2>
-    <p class="hint">눌러서 펼치면 뜻이 나온다. 아는 건 지나가도 된다.</p>
-    <div class="terms">
-      <details class="term">
-        <summary>번들 <span class="en">bundle</span></summary>
-        <p>여러 파일을 <b>하나로 합친 결과물</b>. 브라우저가 파일마다 따로 요청하지 않아도 되게 만든다. 합치는 도구가 <b>번들러</b>(Vite, webpack, esbuild).</p>
-      </details>
-      <details class="term">
-        <summary>모듈 <span class="en">module</span></summary>
-        <p>파일 하나 단위의 코드 덩어리. 밖으로 내보낸 것(<code>export</code>)만 다른 파일이 가져다 쓸 수 있어서, 파일 간 경계가 곧 모듈 경계다.</p>
-      </details>
-      <details class="term">
-        <summary>의존성 <span class="en">dependency</span></summary>
-        <p>내 코드가 돌아가려면 <b>먼저 있어야 하는 남의 코드</b>. 이 페이지에선 antd·react-dom이 그것. 의존성이 의존성을 또 가지므로 보통 트리 모양이 된다.</p>
-      </details>
-      <details class="term">
-        <summary>패키지 <span class="en">package</span></summary>
-        <p>남이 만들어 배포한 코드 묶음. <code>npm</code>이라는 공용 창고에 올라가 있고, <b>패키지 매니저</b>(npm·yarn)가 그걸 받아온다.</p>
-      </details>
-      <details class="term">
-        <summary>시작 파일 <span class="en">entry</span></summary>
-        <p>번들러가 <b>제일 먼저 읽는 파일</b>. 여기서 시작해 <code>import</code>를 따라가며 나머지 파일을 스스로 찾아낸다. 이 페이지에선 <code>main.tsx</code>.</p>
-      </details>
-      <details class="term">
-        <summary>변환 <span class="en">transpile</span></summary>
-        <p>브라우저가 못 읽는 문법(JSX·TypeScript)을 <b>읽을 수 있는 순수 JS로 바꾸는 것</b>. 합치기(번들) 전에 파일마다 먼저 한다.</p>
-      </details>
-      <details class="term">
-        <summary>외부로 빼기 <span class="en">external</span></summary>
-        <p>번들러에게 <b>"이건 내가 안 건드릴 테니 그대로 둬라"</b>고 표시하는 것. 그 <code>import</code> 문은 결과물에 그대로 남아, 실행할 때 해결된다.</p>
-      </details>
-      <details class="term">
-        <summary>import map</summary>
-        <p>브라우저 표준 기능. <b>이름 → 주소(URL) 전화번호부</b>를 HTML에 심어두면, 실행 중 <code>import 'antd'</code>를 만났을 때 그 주소로 파일을 받아온다.</p>
-      </details>
-      <details class="term">
-        <summary>해시 <span class="en">hash</span></summary>
-        <p>내용을 넣으면 <b>짧은 고정 길이 문자열</b>이 나오는 계산. 내용이 조금이라도 다르면 결과가 달라져서, "이거 전에 본 적 있나"를 빠르게 판별하는 지문으로 쓴다.</p>
-      </details>
-      <details class="term">
-        <summary>iframe</summary>
-        <p>웹페이지 안에 넣는 <b>독립된 또 하나의 페이지</b>. 안에서 에러가 나도 바깥 페이지는 멀쩡해서, 남의 코드를 격리해 실행할 때 쓴다.</p>
-      </details>
-      <details class="term">
-        <summary>Web Worker</summary>
-        <p>브라우저에서 <b>화면과 분리된 별도 실행 흐름</b>. 무거운 계산을 여기서 돌리면 화면이 멈추지 않는다. 이 페이지에선 빌드 작업이 여기서 돈다.</p>
-      </details>
-      <details class="term">
-        <summary>S3 · CDN</summary>
-        <p>파일을 올려두고 <b>URL로 받아가게 하는 저장소</b>(S3)와, 그걸 사용자 가까운 서버에 복사해 빨리 주는 배달망(CDN). 미리 만든 패키지 파일이 여기 산다.</p>
-      </details>
-      <details class="term">
-        <summary>캐시 <span class="en">cache</span></summary>
-        <p>한 번 받은 것을 <b>가까이 저장해 두고 다시 쓰는 것</b>. 브라우저가 같은 주소의 파일을 두 번째부터 네트워크 없이 꺼내 쓴다.</p>
-      </details>
-      <details class="term">
-        <summary>HMR <span class="en">hot module replacement</span></summary>
-        <p>개발 중 <b>바뀐 모듈만 갈아끼워</b> 화면 상태(입력값·스크롤)를 유지하는 기능. 이 페이지의 방식은 반대로 <b>통째로 새로 만들어 교체</b>한다.</p>
-      </details>
     </div>
   </section>
 
@@ -614,6 +552,16 @@
 (function () {
   "use strict";
 
+  function renderTerms(list) {
+    if (!list || !list.length) return "";
+    return '<div class="step-terms"><h3>이 단계에 나온 말</h3><div class="terms">' +
+      list.map(function (t) {
+        return '<details class="term"><summary>' + t.ko +
+          (t.en ? ' <span class="en">' + t.en + '</span>' : '') +
+          '</summary><p>' + t.def + '</p></details>';
+      }).join('') + '</div></div>';
+  }
+
   var STEPS = [
     {
       nav: "원본",
@@ -625,7 +573,15 @@
         "<span class='tag-ext'>antd</span>·<span class='tag-ext'>react-dom</span> 처럼 이름만 있으면 외부 패키지다.</p>" +
         "<p>번들러는 아직 아무것도 안 했다. 파일은 디스크(TOI에선 메모리 위 가상 파일시스템)에 흩어져 있는 상태.</p>",
       graph: {},
-      panels: filesPanel(true)
+      panels: filesPanel(true),
+      terms: [
+        { ko:"모듈", en:"module",
+          def:"파일 하나 단위의 코드 덩어리. 밖으로 내보낸 것(<code>export</code>)만 다른 파일이 가져다 쓸 수 있어서, <b>파일 경계가 곧 모듈 경계</b>다." },
+        { ko:"의존성", en:"dependency",
+          def:"내 코드가 돌아가려면 <b>먼저 있어야 하는 다른 코드</b>. 위 그림의 화살표가 전부 의존성이다." },
+        { ko:"패키지", en:"package",
+          def:"남이 만들어 배포한 코드 묶음. <code>npm</code>이라는 공용 창고에 올라가 있고 패키지 매니저(npm·yarn)가 받아온다. 여기선 antd·react-dom이 그것." }
+      ]
     },
     {
       nav: "파일 찾기",
@@ -639,7 +595,15 @@
         "<p>이렇게 <span class='tag-int'>main → UserTable → config</span> 순으로 내 파일 전체와 " +
         "“외부 목록(antd, react-dom)”이 확정된다.</p>",
       graph: { walk: true, visitedOrder: ["n_main", "n_ut", "n_cfg"], badges: ["b_main", "b_ut", "b_cfg"], dimExtEdges: false },
-      panels: traversalPanel()
+      panels: traversalPanel(),
+      terms: [
+        { ko:"시작 파일", en:"entry",
+          def:"번들러가 <b>제일 먼저 읽는 파일</b>. 여기서 출발해 import를 따라가며 나머지를 스스로 찾는다 — 그래서 파일 목록을 따로 안 줘도 된다." },
+        { ko:"의존성 해석", en:"resolution",
+          def:"import에 적힌 글자를 보고 <b>“이게 어느 파일이냐”를 판정</b>하는 일. <code>./</code>로 시작하면 내 파일, 그냥 이름이면 외부 패키지." },
+        { ko:"번들러", en:"bundler",
+          def:"이 모든 걸 하는 도구. Vite·webpack·esbuild가 여기 속한다. 토스는 브라우저 안에서 <b>esbuild</b>를, 서버에서 <b>Vite</b>를 쓴다." }
+      ]
     },
     {
       nav: "변환",
@@ -651,7 +615,15 @@
         "· <code>: string</code>, <code>interface</code> 등 타입 표기 → <b>삭제</b></p>" +
         "<p>이 시점엔 아직 <b>파일이 3개 그대로</b>다. import 문도 살아 있다. 문법만 바뀌었다.</p>",
       graph: { transformed: ["n_main", "n_ut", "n_cfg"], visitedOrder: ["n_main", "n_ut", "n_cfg"], badges: ["b_main", "b_ut", "b_cfg"] },
-      panels: transformPanel()
+      panels: transformPanel(),
+      terms: [
+        { ko:"변환", en:"transpile",
+          def:"브라우저가 못 읽는 문법을 <b>읽을 수 있는 순수 JS로 바꾸는 것</b>. 합치기 전에 파일마다 먼저 한다." },
+        { ko:"JSX", en:"",
+          def:"JS 안에 HTML처럼 태그를 쓰는 문법(<code>&lt;Table /&gt;</code>). 브라우저는 모르므로 함수 호출로 바꿔야 한다." },
+        { ko:"Web Worker", en:"",
+          def:"브라우저에서 <b>화면과 분리된 별도 실행 흐름</b>. 무거운 변환·번들 작업을 여기서 돌려야 화면이 멈추지 않는다." }
+      ]
     },
     {
       nav: "합치기",
@@ -664,7 +636,15 @@
         "파일 3개 → <b><span class='tag-int'>합쳐진 파일 1개</span></b>. 모든 <code>./</code> import 문이 사라진다.</p>" +
         "<p>단, <code>import { Table } from 'antd'</code> 는 <b>손대지 않고 그대로</b> 맨 위에 남긴다.</p>",
       graph: { bundled: ["n_main", "n_ut", "n_cfg"] },
-      panels: bundlePanel()
+      panels: bundlePanel(),
+      terms: [
+        { ko:"번들", en:"bundle",
+          def:"여러 파일을 <b>하나로 합친 결과물</b>. 브라우저가 파일마다 따로 요청하지 않아도 되게 만든다." },
+        { ko:"인라인", en:"inline",
+          def:"합칠 때 파일 내용을 <b>그 자리에 그대로 끼워 넣는 것</b>. 그 결과 파일 간 import가 같은 파일 안의 변수 참조로 바뀐다." },
+        { ko:"외부로 빼기", en:"external",
+          def:"번들러에게 <b>“이건 내가 안 건드릴 테니 그대로 둬라”</b>고 표시하는 것. 그 import 문은 결과물에 남아 실행할 때 해결된다." }
+      ]
     },
     {
       nav: "이름 잇기",
@@ -677,7 +657,15 @@
         "이 URL이 가리키는 <code>antd.js</code>는 <b>패키지 조합별로 서버에서 미리 한 번</b> Vite로 빌드해 S3에 올려둔 것. " +
         "주소에 박힌 <code>pkg-7f3a9c</code>가 그 조합의 해시(<code>packageSetHash</code>)다.</p>",
       graph: { bundled: ["n_main", "n_ut", "n_cfg"], resolved: ["n_rd", "n_antd"] },
-      panels: importmapPanel()
+      panels: importmapPanel(),
+      terms: [
+        { ko:"import map", en:"",
+          def:"브라우저 표준 기능. <b>이름 → 주소(URL) 전화번호부</b>를 HTML에 심어두면, 실행 중 <code>import 'antd'</code>를 만났을 때 그 주소로 파일을 받아온다." },
+        { ko:"해시", en:"hash",
+          def:"내용을 넣으면 <b>짧은 고정 길이 문자열</b>이 나오는 계산. 내용이 조금만 달라도 결과가 달라져서 “이거 전에 본 적 있나”를 판별하는 지문으로 쓴다." },
+        { ko:"S3 · CDN", en:"",
+          def:"파일을 올려두고 <b>URL로 받아가게 하는 저장소</b>(S3)와, 그걸 사용자 가까운 서버에 복사해 빨리 주는 배달망(CDN). 미리 만든 패키지 파일이 여기 산다." }
+      ]
     },
     {
       nav: "HTML 조립",
@@ -690,7 +678,13 @@
         "· <code>&lt;div id=\"root\"&gt;</code> — 렌더 대상</p>" +
         "<p>이 문서를 <b>iframe</b>에 통째로 주입한다. 매번 새 문서 = 이전 실행의 상태가 하나도 안 남는 깨끗한 환경.</p>",
       graph: { bundled: ["n_main", "n_ut", "n_cfg"], resolved: ["n_rd", "n_antd"] },
-      panels: htmlPanel()
+      panels: htmlPanel(),
+      terms: [
+        { ko:"iframe", en:"",
+          def:"웹페이지 안에 넣는 <b>독립된 또 하나의 페이지</b>. 안에서 에러가 나도 바깥은 멀쩡해서, 남의 코드를 격리해 실행할 때 쓴다." },
+        { ko:"HMR", en:"hot module replacement",
+          def:"개발 중 <b>바뀐 모듈만 갈아끼워</b> 화면 상태(입력값·스크롤)를 유지하는 기능. 여기선 반대로 <b>통째로 새로 만들어 교체</b>한다 — 훨씬 단순하다." }
+      ]
     },
     {
       nav: "실행 & 교체",
@@ -703,7 +697,13 @@
         "미리 빌드된 파일이라 <b>설치·빌드 없이 다운로드만</b>. 캐시에 있으면 그마저 생략.</p>" +
         "<p>에러 없이 렌더가 끝나면 <b>이 iframe을 화면에 붙인다</b>. 실패하면 안 붙이고 직전 화면을 유지 — 성공한 것만 커밋.</p>",
       graph: { bundled: ["n_main", "n_ut", "n_cfg"], fetching: ["n_rd", "n_antd"], done: ["n_main", "n_ut", "n_cfg"] },
-      panels: runtimePanel()
+      panels: runtimePanel(),
+      terms: [
+        { ko:"캐시", en:"cache",
+          def:"한 번 받은 것을 <b>가까이 저장해 두고 다시 쓰는 것</b>. 같은 주소의 파일을 두 번째부터는 네트워크 없이 꺼내 쓴다." },
+        { ko:"트랜잭션 커밋", en:"transaction commit",
+          def:"<b>다 성공했을 때만 반영</b>하고, 중간에 실패하면 아무것도 안 바꾸는 방식. 여기선 “에러 없이 렌더된 iframe만 화면에 붙인다”가 그것." }
+      ]
     }
   ];
 
@@ -939,6 +939,7 @@
   var elTitle = document.getElementById("title");
   var elDesc = document.getElementById("desc");
   var elPanels = document.getElementById("panels");
+  var elTerms = document.getElementById("terms");
   var elCount = document.getElementById("count");
   var elPrev = document.getElementById("prev");
   var elNext = document.getElementById("next");
@@ -958,6 +959,7 @@
     elTitle.textContent = s.title;
     elDesc.innerHTML = s.desc;
     elPanels.innerHTML = s.panels;
+    elTerms.innerHTML = renderTerms(s.terms);
     elCount.textContent = (idx + 1) + " / " + STEPS.length;
     elPrev.disabled = idx === 0;
     elNext.disabled = idx === STEPS.length - 1;
