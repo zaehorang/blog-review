@@ -47,7 +47,7 @@
 | 무엇 | 어디 |
 |---|---|
 | 리뷰 노트 | `reviews/YYYY-MM-DD-회사-키워드.md` |
-| raw 원문 | `raw/<review-id>.jsonl` |
+| raw 원문 | `raw/<review-id>.jsonl` — 데이터 형식 설명은 [`raw/README.md`](raw/README.md) |
 | 개념 사전 | `concepts/` + `concepts/README.md` 목록 |
 | 동작 원리 시각화 | `explainers/<주제-슬러그>/index.html` |
 | 손으로 짜보는 실습 | `examples/<주제-슬러그>/` |
