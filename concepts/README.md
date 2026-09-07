@@ -27,6 +27,9 @@
 | [composition 이벤트 (IME 조합)](composition-event.md) | 조합 중 값과 확정 값을 구분 — iOS Safari는 한글에서 아예 안 쏜다 |
 | [Reflow / Repaint](reflow-repaint.md) | 비용은 변경 지점이 아니라 **그걸 감싼 레이아웃 단위 크기**에 비례 |
 | [윈도잉 / 가상 스크롤](windowing.md) | 버퍼 단위가 작을수록 reflow 범위는 줄지만 높이 추정 부담은 는다 |
+| [패키지 매니저와 lockfile](package-manager-lockfile.md) | `package.json`은 범위 선언, lock은 정확한 버전 스냅샷 — 핵심은 재현성 |
+| [번들러](bundler.md) | webpack/Vite/Rollup/esbuild — 속도 vs 기능의 트레이드오프, esbuild는 엔진 Vite는 완제품 |
+| [import map](import-map.md) | `'react'` 같은 이름을 URL로 잇는 전화번호부 — 내 코드만 번들하고 외부는 연결만 |
 
 ## 타입 / 컴파일
 
@@ -48,6 +51,7 @@
 | [오브젝트 스토리지](object-storage.md) | S3는 AWS 상품명 — GCS·Blob Storage가 같은 것 |
 | [CSRF](csrf.md) | 쿠키가 악성사이트발 요청에도 자동으로 실리는 것이 공격의 정체 |
 | [서비스 디스커버리와 게이트웨이](service-discovery-gateway.md) | 현재 살아 있는 서버를 찾고 정책에 맞는 목적지로 안내 |
+| [내용 주소화 (content-addressing)](content-addressing.md) | 내용으로부터 키를 계산 — 다르면 반드시 키가 바뀜을 보장, 그래서 캐시 영구화 가능 |
 
 ## 개발 프로세스 / 도구
 

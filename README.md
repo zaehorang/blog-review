@@ -17,14 +17,15 @@
 - 진행 방식·규칙: [`AGENT.md`](./AGENT.md) · 또는 `/blog-review <링크>`
 
 ## 📊 현황
-- **총 리뷰:** 16개 · **개념:** 41개 · **실습:** 5개 프로젝트
-- **최근 리뷰:** 2026-09-04
+- **총 리뷰:** 17개 · **개념:** 45개 · **실습:** 5개 프로젝트
+- **최근 리뷰:** 2026-09-07
 - **진행:** 주중(월~금)
 
 ## 🗂️ 기록
 
 | # | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트 |
 |---|------|------|-----------|-------|------|------|
+| 17 | 2026-09-07 | 토스 | [AI가 만든 코드가 어드민이 되기까지](https://toss.tech/article/52885) | 반복되는 비싼 작업은 요청 시점이 아니라 변경 시점으로 밀고, 입력에 해시를 찍어 결과를 재사용하면 대부분의 호출이 공짜가 된다 | `frontend` `아키텍처` `성능` `platform` | [보기](./reviews/2026-09-07-toss-ai-code-preview-runtime.md) |
 | 16 | 2026-09-04 | 채널톡 | [OpenAI에서 직접 알려주는 Codex 사용법](https://tech.channel.io/kr/articles/361daeef) | 위임 전에 물어라 — 완료를 참/거짓으로 판정할 수 있게 썼는가, 안 적은 암묵지가 뭔가 (안 적으면 에이전트가 임의로 정한다) | `platform` `ml` `조직/프로세스` `아키텍처` | [보기](./reviews/2026-09-04-channel-codex-usage.md) |
 | 15 | 2026-08-27 | 한컴테크 | [Unity를 모르는 프론트엔드 개발자가 AI로 Unity 서비스를 React로 옮긴 방법](https://tech.hancom.com/migrated-unity-to-react-with-ai/) | 검증 기준을 코드가 아니라 명세로 외재화하면 스택이 바뀌어도, 사람이 바뀌어도 기준이 안 흔들린다 | `frontend` `마이그레이션` `아키텍처` `테스트` | [보기](./reviews/2026-08-27-hancom-unity-react-migration.md) |
 | 14 | 2026-08-25 | SK DEVOCEAN | [Claude Code Dynamic Workflow 쉽게 이해하기](https://devocean.sk.com/blog/techBoardDetail.do?id=168424&boardType=techBlog&isShared=Y) | 결정적 제어(코드)와 확률적 실행(에이전트)을 분리하면 중간 결과가 컨텍스트가 아니라 명시적 상태에 남는다 | `platform` `ml` `아키텍처` `확장성` | [보기](./reviews/2026-08-25-devocean-dynamic-workflow.md) |
