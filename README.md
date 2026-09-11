@@ -18,14 +18,15 @@
 - 진행 방식·규칙: [`AGENT.md`](./AGENT.md) · 또는 `/blog-review <링크>`
 
 ## 📊 현황
-- **총 리뷰:** 17개 · **개념:** 45개 · **실습:** 5개 프로젝트
-- **최근 리뷰:** 2026-09-07
+- **총 리뷰:** 18개 · **개념:** 47개 · **실습:** 5개 프로젝트
+- **최근 리뷰:** 2026-09-11
 - **진행:** 주중(월~금)
 
 ## 🗂️ 기록
 
 | # | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트 |
 |---|------|------|-----------|-------|------|------|
+| 18 | 2026-09-11 | Nextree | [결재 연동 이벤트 핸들러 구축](https://www.nextree.io/gyeoljae-yeondong-ibenteu-haendeulreo-gucug/) | 경계를 넘는 순간 강한 일관성은 비싸다 — 즉시 일치를 포기하고 멱등성 가드로 중복을 세트로 막아라 | `backend` `아키텍처` `데이터정합성` `장애대응` | [보기](./reviews/2026-09-11-nextree-approval-event-handler.md) |
 | 17 | 2026-09-07 | 토스 | [AI가 만든 코드가 어드민이 되기까지](https://toss.tech/article/52885) | 반복되는 비싼 작업은 요청 시점이 아니라 변경 시점으로 밀고, 입력에 해시를 찍어 결과를 재사용하면 대부분의 호출이 공짜가 된다 | `frontend` `아키텍처` `성능` `platform` | [보기](./reviews/2026-09-07-toss-ai-code-preview-runtime.md) |
 | 16 | 2026-09-04 | 채널톡 | [OpenAI에서 직접 알려주는 Codex 사용법](https://tech.channel.io/kr/articles/361daeef) | 위임 전에 물어라 — 완료를 참/거짓으로 판정할 수 있게 썼는가, 안 적은 암묵지가 뭔가 (안 적으면 에이전트가 임의로 정한다) | `platform` `ml` `조직/프로세스` `아키텍처` | [보기](./reviews/2026-09-04-channel-codex-usage.md) |
 | 15 | 2026-08-27 | 한컴테크 | [Unity를 모르는 프론트엔드 개발자가 AI로 Unity 서비스를 React로 옮긴 방법](https://tech.hancom.com/migrated-unity-to-react-with-ai/) | 검증 기준을 코드가 아니라 명세로 외재화하면 스택이 바뀌어도, 사람이 바뀌어도 기준이 안 흔들린다 | `frontend` `마이그레이션` `아키텍처` `테스트` | [보기](./reviews/2026-08-27-hancom-unity-react-migration.md) |

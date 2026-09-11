@@ -53,6 +53,13 @@
 | [서비스 디스커버리와 게이트웨이](service-discovery-gateway.md) | 현재 살아 있는 서버를 찾고 정책에 맞는 목적지로 안내 |
 | [내용 주소화 (content-addressing)](content-addressing.md) | 내용으로부터 키를 계산 — 다르면 반드시 키가 바뀜을 보장, 그래서 캐시 영구화 가능 |
 
+## 백엔드 / 분산 시스템
+
+| 개념 | 한 줄 |
+|---|---|
+| [최종 일관성 (Eventual Consistency)](eventual-consistency.md) | 즉시 일치를 포기하는 대신 장애 격리를 얻는 것 — 서비스별 DB 분리의 대가 |
+| [멱등성 (Idempotency)](idempotency.md) | 같은 요청 몇 번을 처리해도 결과가 같아야 함 — 비동기 전환은 이걸 세트로 요구한다 |
+
 ## 개발 프로세스 / 도구
 
 | 개념 | 한 줄 |
