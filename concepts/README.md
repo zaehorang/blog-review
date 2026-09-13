@@ -83,3 +83,5 @@
 | [벤더 (vendor)](vendor.md) | 모델 공급사 — "벤더가 먼저 지우라고 말하고 있다"의 그 벤더 |
 | [임베딩](embedding.md) | 텍스트를 벡터로 **재는** 변환 — 정보를 더하는 게 아니다 |
 | [청킹](chunking.md) | 조각을 어떻게 만드느냐가 잴 대상 자체를 바꾼다 — RAG 품질의 진짜 상한 |
+| [행동 평가 (Behavioral Evaluation)](behavioral-evaluation.md) | 결과물이 아니라 "이 상황에서 이 행동을 했는가"를 재는 유닛테스트 — 모델이 바뀌어도 남는 자산 |
+| [LLM-as-a-judge](llm-as-a-judge.md) | 툴 시퀀스를 강제 못 하는 모호한 결과를 별도 LLM 호출로 느슨하게 판정 |

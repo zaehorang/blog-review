@@ -18,14 +18,15 @@
 - 진행 방식·규칙: [`AGENT.md`](./AGENT.md) · 또는 `/blog-review <링크>`
 
 ## 📊 현황
-- **총 리뷰:** 18개 · **개념:** 47개 · **실습:** 5개 프로젝트
-- **최근 리뷰:** 2026-09-11
+- **총 리뷰:** 19개 · **개념:** 49개 · **실습:** 5개 프로젝트
+- **최근 리뷰:** 2026-09-14
 - **진행:** 주중(월~금)
 
 ## 🗂️ 기록
 
 | # | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트 |
 |---|------|------|-----------|-------|------|------|
+| 19 | 2026-09-14 | Google | [The Anatomy of Harness Engineering](https://developers.googleblog.com/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents/) | 벤치마크 점수 대신 "이 상황에서 이 행동을 했는가"를 재는 유닛테스트를 쌓아라 — 모델이 바뀌어도 남고, 모델이 강해지면 그걸 지키던 하네스는 가지치기할 수 있다 | `ml` `platform` `테스트` | [보기](./reviews/2026-09-14-google-agent-harness-engineering.md) |
 | 18 | 2026-09-11 | Nextree | [결재 연동 이벤트 핸들러 구축](https://www.nextree.io/gyeoljae-yeondong-ibenteu-haendeulreo-gucug/) | 경계를 넘는 순간 강한 일관성은 비싸다 — 즉시 일치를 포기하고 멱등성 가드로 중복을 세트로 막아라 | `backend` `아키텍처` `데이터정합성` `장애대응` | [보기](./reviews/2026-09-11-nextree-approval-event-handler.md) |
 | 17 | 2026-09-07 | 토스 | [AI가 만든 코드가 어드민이 되기까지](https://toss.tech/article/52885) | 반복되는 비싼 작업은 요청 시점이 아니라 변경 시점으로 밀고, 입력에 해시를 찍어 결과를 재사용하면 대부분의 호출이 공짜가 된다 | `frontend` `아키텍처` `성능` `platform` | [보기](./reviews/2026-09-07-toss-ai-code-preview-runtime.md) |
 | 16 | 2026-09-04 | 채널톡 | [OpenAI에서 직접 알려주는 Codex 사용법](https://tech.channel.io/kr/articles/361daeef) | 위임 전에 물어라 — 완료를 참/거짓으로 판정할 수 있게 썼는가, 안 적은 암묵지가 뭔가 (안 적으면 에이전트가 임의로 정한다) | `platform` `ml` `조직/프로세스` `아키텍처` | [보기](./reviews/2026-09-04-channel-codex-usage.md) |
