@@ -18,14 +18,15 @@
 - 진행 방식·규칙: [`AGENT.md`](./AGENT.md) · 또는 `/blog-review <링크>`
 
 ## 📊 현황
-- **총 리뷰:** 20개 · **개념:** 49개 · **실습:** 5개 프로젝트
-- **최근 리뷰:** 2026-09-15
+- **총 리뷰:** 21개 · **개념:** 50개 · **실습:** 5개 프로젝트
+- **최근 리뷰:** 2026-09-16
 - **진행:** 주중(월~금)
 
 ## 🗂️ 기록
 
 | # | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트 |
 |---|------|------|-----------|-------|------|------|
+| 21 | 2026-09-16 | 삼성 | [AI에게 분석을 맡기기 전에, "분석할 수 없음"부터 가르치세요](https://techblog.samsung.com/blog/article/95) | 규칙이 명확한 일은 코드로, 해석은 LLM으로 — 신뢰의 핵심은 빠른 답이 아니라 모를 땐 모른다고 말하는 능력 | `mobile` `ml` `장애대응` `아키텍처` | [보기](./reviews/2026-09-16-samsung-woa-agent.md) |
 | 20 | 2026-09-15 | 당근 | [프론트엔드와 백엔드를 한 팀으로 합치면 어떤 일이 일어날까?](https://medium.com/daangn/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C%EC%99%80-%EB%B0%B1%EC%97%94%EB%93%9C%EB%A5%BC-%ED%95%9C-%ED%8C%80%EC%9C%BC%EB%A1%9C-%ED%95%A9%EC%B9%98%EB%A9%B4-%EC%96%B4%EB%96%A4-%EC%9D%BC%EC%9D%B4-%EC%9D%BC%EC%96%B4%EB%82%A0%EA%B9%8C-f8b32edb2eb1) | 재현 조건은 "누가"가 아니라 "무엇이 이미 깔려 있었나"다 — AI는 진입장벽을 낮추는 촉매일 뿐, 연료는 팀이 쌓아둔 문서였다 | `backend` `frontend` `조직/프로세스` | [보기](./reviews/2026-09-15-daangn-fe-be-merge.md) |
 | 19 | 2026-09-14 | Google | [The Anatomy of Harness Engineering](https://developers.googleblog.com/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents/) | 벤치마크 점수 대신 "이 상황에서 이 행동을 했는가"를 재는 유닛테스트를 쌓아라 — 모델이 바뀌어도 남고, 모델이 강해지면 그걸 지키던 하네스는 가지치기할 수 있다 | `ml` `platform` `테스트` | [보기](./reviews/2026-09-14-google-agent-harness-engineering.md) |
 | 18 | 2026-09-11 | Nextree | [결재 연동 이벤트 핸들러 구축](https://www.nextree.io/gyeoljae-yeondong-ibenteu-haendeulreo-gucug/) | 경계를 넘는 순간 강한 일관성은 비싸다 — 즉시 일치를 포기하고 멱등성 가드로 중복을 세트로 막아라 | `backend` `아키텍처` `데이터정합성` `장애대응` | [보기](./reviews/2026-09-11-nextree-approval-event-handler.md) |
