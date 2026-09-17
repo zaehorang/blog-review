@@ -74,6 +74,7 @@
 | [에이전틱 워크플로우 루프](agentic-workflow-loop.md) | 위임·관찰·개입·검토 — 사람의 일이 코딩에서 루프 운영으로 이동 |
 | [완료 기준 (acceptance criteria)](acceptance-criteria.md) | 끝을 참/거짓 판정 가능한 문장으로 미리 쓴 것 — 미래의 수용 테스트 |
 | [Record and replay](record-and-replay.md) | 시연해 자동화 — API 없는 시스템의 임시 다리, 표면 구조에 묶여 깨진다 |
+| [사용자 행동 로그 설계](event-tracking-design.md) | 계측(무엇을 남길지)과 판단(그걸로 뭘 결론 내릴지)은 별개 — 사후 보완이 안 돼 법무 검토급 필수 절차 |
 
 ## AI / ML
 
