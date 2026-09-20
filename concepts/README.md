@@ -87,3 +87,5 @@
 | [행동 평가 (Behavioral Evaluation)](behavioral-evaluation.md) | 결과물이 아니라 "이 상황에서 이 행동을 했는가"를 재는 유닛테스트 — 모델이 바뀌어도 남는 자산 |
 | [LLM-as-a-judge](llm-as-a-judge.md) | 툴 시퀀스를 강제 못 하는 모호한 결과를 별도 LLM 호출로 느슨하게 판정 |
 | [Automation bias (자동화 편향)](automation-bias.md) | 역할을 나눠도 사람은 잘 맞는 추천일수록 검증을 대충 한다 |
+| [MCP (Model Context Protocol)](mcp.md) | 에이전트가 데이터/도구에 표준 방식으로 붙는 수직적 연결 표준 |
+| [A2A (Agent2Agent Protocol)](a2a.md) | 에이전트끼리 협업하는 수평적 연결 표준 — MCP와 짝 |
