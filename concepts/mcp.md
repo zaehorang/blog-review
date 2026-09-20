@@ -21,4 +21,4 @@ Anthropic이 만든 개방 표준. LLM/에이전트가 외부 데이터 소스�
 MCP는 **에이전트 ↔ 데이터/도구** 축, A2A는 **에이전트 ↔ 에이전트** 축을 표준화한다.
 
 ## 처음 나온 노트
-[SK AX — 답변에서 실행으로, AI Agent의 활용도를 결정하는 업무 맥락](../reviews/2026-09-21-skax-agent-context.md)
+[SK AX — 업무 맥락(Context)에서 AXgenticWire MI까지](../reviews/2026-09-21-skax-agenticwire.md)

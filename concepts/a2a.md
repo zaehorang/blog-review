@@ -18,6 +18,6 @@ Google이 주도한 개방 표준. 서로 다른 벤더·프레임워크로 만�
 A2A는 **에이전트 ↔ 에이전트** 축, MCP는 **에이전트 ↔ 데이터/도구** 축을 표준화한다.
 
 ## 처음 나온 노트
-[SK AX — 답변에서 실행으로, AI Agent의 활용도를 결정하는 업무 맥락](../reviews/2026-09-21-skax-agent-context.md)
+[SK AX — 업무 맥락(Context)에서 AXgenticWire MI까지](../reviews/2026-09-21-skax-agenticwire.md)
 
 > 참고: 두 표준이 2026년 8월 Linux Foundation 산하 Agentic AI Foundation으로 통합됐다는 서술은 원문(SK AX 글) 인용이며, 에이전트가 별도로 검증한 사실은 아니다(지식 컷오프 이후 시점).
