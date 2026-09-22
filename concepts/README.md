@@ -52,6 +52,13 @@
 | [CSRF](csrf.md) | 쿠키가 악성사이트발 요청에도 자동으로 실리는 것이 공격의 정체 |
 | [서비스 디스커버리와 게이트웨이](service-discovery-gateway.md) | 현재 살아 있는 서버를 찾고 정책에 맞는 목적지로 안내 |
 | [내용 주소화 (content-addressing)](content-addressing.md) | 내용으로부터 키를 계산 — 다르면 반드시 키가 바뀜을 보장, 그래서 캐시 영구화 가능 |
+| [네트워크 계층 (TCP/IP 4계층)](network-layers.md) | REST·RPC 비교가 헷갈리는 이유 — 설계 스타일과 프로토콜과 전송을 같은 선상에 놓아서 |
+| [TCP vs UDP](tcp-vs-udp.md) | TCP는 원래 양방향 — "가능한가"와 "그 능력을 쓰기로 약속했나"는 다른 질문 |
+| [HTTP](http.md) | 해결한 건 "연결 반복"이 아니라 **메시지 형식의 표준화** |
+| [REST](rest.md) | 프로토콜이 아니라 설계 스타일 — URI(명사)+HTTP 메서드(동사), 느슨한 결합 |
+| [RPC](rpc.md) | 원격 함수를 로컬처럼 호출한다는 패러다임 — gRPC는 그 구체적 구현체 |
+| [gRPC](grpc.md) | 결합은 긴밀해지지만 그만큼 성능과 스트리밍을 얻는 트레이드오프 |
+| [Protocol Buffers](protocol-buffers.md) | 필드 번호 기반이라 하위 호환을 지키며 스키마를 진화시킬 수 있다 |
 
 ## 백엔드 / 분산 시스템
 

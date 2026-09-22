@@ -16,14 +16,15 @@
 - [남은 질문](./QUESTIONS.md) · [해볼 것](./TRY.md)
 
 ## 📊 현황
-- **총 리뷰:** 23개 · **개념:** 53개 · **실습:** 5개 프로젝트
-- **최근 리뷰:** 2026-09-21
+- **총 리뷰:** 24개 · **개념:** 60개 · **실습:** 5개 프로젝트
+- **최근 리뷰:** 2026-09-22
 - **진행:** 주중(월~금)
 
 ## 🗂️ 기록
 
 | # | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트 |
 |---|------|------|-----------|-------|------|------|
+| 24 | 2026-09-22 | AWS | [gRPC와 REST 비교](https://aws.amazon.com/ko/compare/the-difference-between-grpc-and-rest/) | 두 기술을 비교할 땐 먼저 계층을 맞추고, "무엇이 가능한가"와 "무엇을 하기로 약속했는가"를 나눠서 봐라 | `backend` `아키텍처` `성능` | [보기](./reviews/2026-09-22-aws-grpc-rest.md) |
 | 23 | 2026-09-21 | SK AX | [업무 맥락](https://www.skax.co.kr/insight/trend/3850) · [AXgenticWire MI](https://www.skax.co.kr/insight/trend/3852) | 모델보다 맥락이 먼저다 — Core가 맥락을 표준 연결로 제공하고, 그 위에서 MI가 근거 있는 예측을 실행 가능한 형태로 내놓는다 | `ml` `platform` `아키텍처` `보안` | [보기](./reviews/2026-09-21-skax-agenticwire.md) |
 | 22 | 2026-09-17 | 요기요 | [Product Engineer의 가능성과 조건](https://techblog.yogiyo.co.kr/product-engineer%EC%9D%98-%EA%B0%80%EB%8A%A5%EC%84%B1%EA%B3%BC-%EC%A1%B0%EA%B1%B4-%EB%8C%80%EA%B7%9C%EB%AA%A8-%EC%98%88%EC%82%B0%EC%9D%B4-%ED%88%AC%EC%9E%85%EB%90%98%EB%8A%94-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%ED%99%95%EC%9D%B8%ED%95%98%EB%8B%A4-6891ee6b58d5) | 역할을 합치면 없어지는 건 왕복 지연이지 경험 부족이 아니다 — AI는 전자만 메워주고, 후자는 절차를 문서로 외재화해야 메워진다 | `backend` `frontend` `조직/프로세스` | [보기](./reviews/2026-09-17-yogiyo-product-engineer.md) |
 | 21 | 2026-09-16 | 삼성 | [AI에게 분석을 맡기기 전에, "분석할 수 없음"부터 가르치세요](https://techblog.samsung.com/blog/article/95) | 규칙이 명확한 일은 코드로, 해석은 LLM으로 — 신뢰의 핵심은 빠른 답이 아니라 모를 땐 모른다고 말하는 능력 | `mobile` `ml` `장애대응` `아키텍처` | [보기](./reviews/2026-09-16-samsung-woa-agent.md) |
