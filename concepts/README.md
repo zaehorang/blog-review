@@ -66,6 +66,10 @@
 |---|---|
 | [최종 일관성 (Eventual Consistency)](eventual-consistency.md) | 즉시 일치를 포기하는 대신 장애 격리를 얻는 것 — 서비스별 DB 분리의 대가 |
 | [멱등성 (Idempotency)](idempotency.md) | 같은 요청 몇 번을 처리해도 결과가 같아야 함 — 비동기 전환은 이걸 세트로 요구한다 |
+| [K8s 기본 구조 (Pod/Node/Cluster/워크로드)](kubernetes-workload-basics.md) | Cluster ⊃ Control/Data Plane ⊃ Node ⊃ Pod, 워크로드는 Deployment/StatefulSet/Job |
+| [K8s 컨트롤 플레인 (etcd/스케줄러/kubelet)](kubernetes-control-plane.md) | etcd가 진짜 진실의 원천 — 스케줄러는 "어디에", kubelet은 "실행"만 |
+| [K8s Service와 네트워킹](kubernetes-service-networking.md) | Pod IP(CNI)·Endpoints(목록)·iptables(실행 규칙)는 서로 다른 컴포넌트 |
+| [Docker 컨테이너 기본](docker-container-basics.md) | Image는 템플릿, Container는 실행 인스턴스, Runtime이 실제로 띄운다 |
 
 ## 개발 프로세스 / 도구
 
@@ -96,3 +100,6 @@
 | [Automation bias (자동화 편향)](automation-bias.md) | 역할을 나눠도 사람은 잘 맞는 추천일수록 검증을 대충 한다 |
 | [MCP (Model Context Protocol)](mcp.md) | 에이전트가 데이터/도구에 표준 방식으로 붙는 수직적 연결 표준 |
 | [A2A (Agent2Agent Protocol)](a2a.md) | 에이전트끼리 협업하는 수평적 연결 표준 — MCP와 짝 |
+| [추론(inference) vs 추론(reasoning)](inference-vs-reasoning.md) | 서빙 전체를 뜻하는 추론과, 그 안의 "생각하는 단계"는 다른 레벨의 개념 |
+| [Chain-of-Thought / Reasoning 모델](chain-of-thought-reasoning.md) | 1세대는 프롬프트 기법, 지금 reasoning 모델은 RL로 가중치에 내재화된 행동 |
+| [KV 캐시와 Prefill/Decode](kv-cache-prefill-decode.md) | 연산 바운드(prefill)와 메모리대역폭 바운드(decode)를 섞으면 서로 병목을 전이시킨다 |
