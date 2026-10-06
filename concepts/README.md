@@ -103,3 +103,4 @@
 | [추론(inference) vs 추론(reasoning)](inference-vs-reasoning.md) | 서빙 전체를 뜻하는 추론과, 그 안의 "생각하는 단계"는 다른 레벨의 개념 |
 | [Chain-of-Thought / Reasoning 모델](chain-of-thought-reasoning.md) | 1세대는 프롬프트 기법, 지금 reasoning 모델은 RL로 가중치에 내재화된 행동 |
 | [KV 캐시와 Prefill/Decode](kv-cache-prefill-decode.md) | 연산 바운드(prefill)와 메모리대역폭 바운드(decode)를 섞으면 서로 병목을 전이시킨다 |
+| [에이전트 하네스 (4기둥 · 규칙 3층)](agent-harness.md) | 모델 밖의 맥락·제약·검증·피드백 묶음 — 규칙은 텍스트 < 통로 고정 < 권한 제거 순으로 세다 |
