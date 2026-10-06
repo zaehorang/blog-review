@@ -22,7 +22,6 @@
 **글로벌 스킬 `blog-review`** 가 담는다 → [zaehorang/agent-skills](https://github.com/zaehorang/agent-skills/tree/main/blog-review)
 
 **이 파일은 그 방법을 다시 적지 않는다.** 여기엔 이 레포에만 해당하는 것 — 결정 이력, 경로, 커밋 규칙 — 만 남긴다.
-충돌하면 **이 파일이 우선**한다.
 
 ## 프로젝트 목적
 기업 테크 블로그를 하루 1개 리뷰한다. 직접 겪기 힘든 엔지니어링 상황을 **대리 경험**하고,
