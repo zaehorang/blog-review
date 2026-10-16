@@ -78,6 +78,7 @@
 | [Breaking change & semver](breaking-change.md) | 판정 기준은 크기가 아니라 **"남의 코드가 손 안 대고 돌아가나"** |
 | [docstring](docstring.md) | 기계가 파싱하는 규격 주석 — 문서·MCP를 여기서 파생시키면 안 어긋난다 |
 | [모노레포](monorepo.md) | 배포를 없앤 게 아니라 **개발 루프에서 배포를 걷어낸** 것 |
+| [Mutation testing](mutation-testing.md) | 테스트가 "통과한다"가 아니라 "깨질 수 있다"를 검증 — 이 글은 코드 대신 **기댓값**을 틀리게 바꿔 위양성을 가린다 |
 | [플러그인](framework-plugin.md) | 런타임 주입형은 프레임워크와 함께 죽고, 빌드타임 생성형은 결과물만 남는다 |
 | [증분 빌드와 피드백 루프](incremental-build.md) | 루프가 빠르면 에이전트가 더 자주 시도하고 스스로 교정한다 |
 | [agent-device](agent-device.md) | 접근성 트리로 앱을 읽는 UI 자동화 — 재현 가능해서 E2E로 승격 |

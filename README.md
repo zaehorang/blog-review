@@ -16,14 +16,15 @@
 - [남은 질문](./QUESTIONS.md) · [해볼 것](./TRY.md)
 
 ## 📊 현황
-- **총 리뷰:** 26개 · **개념:** 67개 · **실습:** 5개 프로젝트
-- **최근 리뷰:** 2026-10-06
+- **총 리뷰:** 27개 · **개념:** 68개 · **실습:** 5개 프로젝트
+- **최근 리뷰:** 2026-10-16
 - **진행:** 주중(월~금)
 
 ## 🗂️ 기록
 
 | # | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트 |
 |---|------|------|-----------|-------|------|------|
+| 27 | 2026-10-16 | LY Corporation | [AI로 E2E 회귀 테스트 자동화하기](https://techblog.lycorp.co.jp/ko/ai-e2e-test-automation) | 병목은 코드 생성이 아니라 "통과가 의도를 검증하는가" — 구현은 AI가 바꿔도 합격 기준은 고정하고, 기계가 못 잡는 판단만 증거와 함께 사람에게 넘긴다 | `devops` `ml` `테스트` | [보기](./reviews/2026-10-16-ly-ai-e2e-test-pipeline.md) |
 | 26 | 2026-10-06 | NHN Cloud | [나는 하네스 깎는 노인이 되었다 시리즈 1: 은총알은 없다](https://meetup.nhncloud.com/posts/423) | 하네스는 정보 창고가 아니라 "찾는 방법 + 기록 + 강제력"이고, 개선은 AI가 제안·사람이 반영한다 — 그 "왜"는 겪은 사람만 알기에 은총알은 없다 | `platform` `ml` `아키텍처` `조직/프로세스` | [보기](./reviews/2026-10-06-nhn-harness-silver-bullet.md) |
 | 25 | 2026-09-28 | SK DEVOCEAN | [쿠버네티스로 여는 AI 추론 인프라](https://devocean.sk.com/blog/techBoardDetail.do?id=168512&boardType=techBlog&isShared=Y) | Service의 상태 모르는 무작위 분산은 KV 캐시를 죽인다 — 캐시 있는 곳으로 보내는 상태 인지 라우팅과 prefill/decode 분리가 지금 추론 인프라의 핵심 두 축 | `infra` `platform` `성능` `비용최적화` | [보기](./reviews/2026-09-28-devocean-k8s-inference.md) |
 | 24 | 2026-09-22 | AWS | [gRPC와 REST 비교](https://aws.amazon.com/ko/compare/the-difference-between-grpc-and-rest/) | 두 기술을 비교할 땐 먼저 계층을 맞추고, "무엇이 가능한가"와 "무엇을 하기로 약속했는가"를 나눠서 봐라 | `backend` `아키텍처` `성능` | [보기](./reviews/2026-09-22-aws-grpc-rest.md) |
