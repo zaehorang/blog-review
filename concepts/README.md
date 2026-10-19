@@ -58,12 +58,14 @@
 | [REST](rest.md) | 프로토콜이 아니라 설계 스타일 — URI(명사)+HTTP 메서드(동사), 느슨한 결합 |
 | [RPC](rpc.md) | 원격 함수를 로컬처럼 호출한다는 패러다임 — gRPC는 그 구체적 구현체 |
 | [gRPC](grpc.md) | 결합은 긴밀해지지만 그만큼 성능과 스트리밍을 얻는 트레이드오프 |
+| [JSON-RPC](json-rpc.md) | RPC를 JSON으로 하는 규격 — HTTP는 길, JSON-RPC는 말하는 규칙, gRPC는 둘을 묶은 세트로 층위가 다르다 |
 | [Protocol Buffers](protocol-buffers.md) | 필드 번호 기반이라 하위 호환을 지키며 스키마를 진화시킬 수 있다 |
 
 ## 백엔드 / 분산 시스템
 
 | 개념 | 한 줄 |
 |---|---|
+| [DDD / DDD-lite](ddd.md) | 비즈니스 개념 단위로 경계를 긋는 설계 — lite는 경계+계층+단방향 의존성만 가져온다 |
 | [최종 일관성 (Eventual Consistency)](eventual-consistency.md) | 즉시 일치를 포기하는 대신 장애 격리를 얻는 것 — 서비스별 DB 분리의 대가 |
 | [멱등성 (Idempotency)](idempotency.md) | 같은 요청 몇 번을 처리해도 결과가 같아야 함 — 비동기 전환은 이걸 세트로 요구한다 |
 | [K8s 기본 구조 (Pod/Node/Cluster/워크로드)](kubernetes-workload-basics.md) | Cluster ⊃ Control/Data Plane ⊃ Node ⊃ Pod, 워크로드는 Deployment/StatefulSet/Job |

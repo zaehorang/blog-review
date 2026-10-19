@@ -11,5 +11,5 @@
 
 이게 RPC(gRPC)가 REST보다 **긴밀하게 결합**되는 이유이기도 하다 — 양쪽이 같은 함수 시그니처(proto 정의)를 공유해야 컴파일·동작이 가능하기 때문.
 
-**관련:** [REST](rest.md) · [gRPC](grpc.md) · [Protocol Buffers](protocol-buffers.md)
+**관련:** [REST](rest.md) · [gRPC](grpc.md) · [JSON-RPC](json-rpc.md) · [Protocol Buffers](protocol-buffers.md)
 **처음 나온 노트:** [AWS — gRPC vs REST](../reviews/2026-09-22-aws-grpc-rest.md)

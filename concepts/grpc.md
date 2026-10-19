@@ -26,5 +26,5 @@ Google이 만든 [RPC](rpc.md) 패러다임의 구체적 구현체. [HTTP/2](htt
 
 브라우저 API(fetch/XHR)가 gRPC에 필요한 저수준 HTTP/2 프레임 제어(trailer 등)를 노출하지 않는다. 그래서 `gRPC-Web`이라는 별도 프록시 계층이 필요하다.
 
-**관련:** [RPC](rpc.md) · [Protocol Buffers](protocol-buffers.md) · [HTTP](http.md) · [TCP vs UDP](tcp-vs-udp.md)
+**관련:** [RPC](rpc.md) · [JSON-RPC](json-rpc.md) · [DDD](ddd.md) (서비스 핸들러 계층이 gRPC 진입점이 되는 예) · [Protocol Buffers](protocol-buffers.md) · [HTTP](http.md) · [TCP vs UDP](tcp-vs-udp.md)
 **처음 나온 노트:** [AWS — gRPC vs REST](../reviews/2026-09-22-aws-grpc-rest.md)

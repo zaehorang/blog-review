@@ -16,14 +16,15 @@
 - [남은 질문](./QUESTIONS.md) · [해볼 것](./TRY.md)
 
 ## 📊 현황
-- **총 리뷰:** 27개 · **개념:** 68개 · **실습:** 5개 프로젝트
-- **최근 리뷰:** 2026-10-16
+- **총 리뷰:** 28개 · **개념:** 71개 · **실습:** 5개 프로젝트
+- **최근 리뷰:** 2026-10-19
 - **진행:** 주중(월~금)
 
 ## 🗂️ 기록
 
 | # | 날짜 | 회사 | 글 (원문) | 한 줄 | 태그 | 노트 |
 |---|------|------|-----------|-------|------|------|
+| 28 | 2026-10-19 | 뱅크샐러드 | [AI 코딩 시대, DDD가 더 필요해진 이유](https://blog.banksalad.com/tech/banksalad-ddd-in-ai-era/) | 구조 기준을 PR마다의 개인 판단에 맡기면 폴더만 바뀌고 복잡도는 그대로 — 기준을 구조로 박아 변경을 한 폴더에 가두면 AI의 탐색 범위도 사람의 리뷰 범위도 준다 | `backend` `아키텍처` `리팩터링` `조직/프로세스` | [보기](./reviews/2026-10-19-banksalad-ddd-ai-era.md) |
 | 27 | 2026-10-16 | LY Corporation | [AI로 E2E 회귀 테스트 자동화하기](https://techblog.lycorp.co.jp/ko/ai-e2e-test-automation) | 병목은 코드 생성이 아니라 "통과가 의도를 검증하는가" — 구현은 AI가 바꿔도 합격 기준은 고정하고, 기계가 못 잡는 판단만 증거와 함께 사람에게 넘긴다 | `devops` `ml` `테스트` | [보기](./reviews/2026-10-16-ly-ai-e2e-test-pipeline.md) |
 | 26 | 2026-10-06 | NHN Cloud | [나는 하네스 깎는 노인이 되었다 시리즈 1: 은총알은 없다](https://meetup.nhncloud.com/posts/423) | 하네스는 정보 창고가 아니라 "찾는 방법 + 기록 + 강제력"이고, 개선은 AI가 제안·사람이 반영한다 — 그 "왜"는 겪은 사람만 알기에 은총알은 없다 | `platform` `ml` `아키텍처` `조직/프로세스` | [보기](./reviews/2026-10-06-nhn-harness-silver-bullet.md) |
 | 25 | 2026-09-28 | SK DEVOCEAN | [쿠버네티스로 여는 AI 추론 인프라](https://devocean.sk.com/blog/techBoardDetail.do?id=168512&boardType=techBlog&isShared=Y) | Service의 상태 모르는 무작위 분산은 KV 캐시를 죽인다 — 캐시 있는 곳으로 보내는 상태 인지 라우팅과 prefill/decode 분리가 지금 추론 인프라의 핵심 두 축 | `infra` `platform` `성능` `비용최적화` | [보기](./reviews/2026-09-28-devocean-k8s-inference.md) |
