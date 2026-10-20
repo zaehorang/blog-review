@@ -60,6 +60,8 @@
 | [gRPC](grpc.md) | 결합은 긴밀해지지만 그만큼 성능과 스트리밍을 얻는 트레이드오프 |
 | [JSON-RPC](json-rpc.md) | RPC를 JSON으로 하는 규격 — HTTP는 길, JSON-RPC는 말하는 규칙, gRPC는 둘을 묶은 세트로 층위가 다르다 |
 | [Protocol Buffers](protocol-buffers.md) | 필드 번호 기반이라 하위 호환을 지키며 스키마를 진화시킬 수 있다 |
+| [VPC와 public/private subnet](vpc-subnets.md) | 입구(ALB)만 public, 실제 일하는 서버는 private — 외부에서 직접 안 닿게 하는 최소 노출 |
+| [ECS와 Fargate](ecs-fargate.md) | ECS는 무엇을 몇 개 돌릴지, Fargate는 그걸 돌릴 서버를 대신 마련 — 컨테이너가 아니라 실행 방식 |
 
 ## 백엔드 / 분산 시스템
 
@@ -89,6 +91,7 @@
 | [완료 기준 (acceptance criteria)](acceptance-criteria.md) | 끝을 참/거짓 판정 가능한 문장으로 미리 쓴 것 — 미래의 수용 테스트 |
 | [Record and replay](record-and-replay.md) | 시연해 자동화 — API 없는 시스템의 임시 다리, 표면 구조에 묶여 깨진다 |
 | [사용자 행동 로그 설계](event-tracking-design.md) | 계측(무엇을 남길지)과 판단(그걸로 뭘 결론 내릴지)은 별개 — 사후 보완이 안 돼 법무 검토급 필수 절차 |
+| [AI-DLC](ai-dlc.md) | AI가 계획·질문하고 사람(팀)이 검증한 뒤 구현 — 개인 승인이 아니라 팀 협업 의식이 중심 |
 
 ## AI / ML
 
@@ -107,3 +110,4 @@
 | [Chain-of-Thought / Reasoning 모델](chain-of-thought-reasoning.md) | 1세대는 프롬프트 기법, 지금 reasoning 모델은 RL로 가중치에 내재화된 행동 |
 | [KV 캐시와 Prefill/Decode](kv-cache-prefill-decode.md) | 연산 바운드(prefill)와 메모리대역폭 바운드(decode)를 섞으면 서로 병목을 전이시킨다 |
 | [에이전트 하네스 (4기둥 · 규칙 3층)](agent-harness.md) | 모델 밖의 맥락·제약·검증·피드백 묶음 — 규칙은 텍스트 < 통로 고정 < 권한 제거 순으로 세다 |
+| [Bedrock · Strands · AgentCore](bedrock-agentcore-strands.md) | 모델+플랫폼 / 에이전트 SDK / 세션별 microVM 격리 호스팅 — 세 층을 빌려 쓰고 도메인 판단만 직접 |
