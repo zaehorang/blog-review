@@ -70,6 +70,8 @@
 | [DDD / DDD-lite](ddd.md) | 비즈니스 개념 단위로 경계를 긋는 설계 — lite는 경계+계층+단방향 의존성만 가져온다 |
 | [최종 일관성 (Eventual Consistency)](eventual-consistency.md) | 즉시 일치를 포기하는 대신 장애 격리를 얻는 것 — 서비스별 DB 분리의 대가 |
 | [멱등성 (Idempotency)](idempotency.md) | 같은 요청 몇 번을 처리해도 결과가 같아야 함 — 비동기 전환은 이걸 세트로 요구한다 |
+| [메시지 큐와 SQS](message-queue-sqs.md) | 할 일을 큐에 넣고 소비자가 폴링해 처리 — 잃지 않지만 at-least-once라 중복은 소비자 몫 |
+| [이중 쓰기 문제 (Dual Write)](dual-write-problem.md) | DB와 큐는 한 트랜잭션으로 못 묶여 한쪽만 반영되는 순간이 생긴다 — 저장소를 하나로 줄이는 길 |
 | [K8s 기본 구조 (Pod/Node/Cluster/워크로드)](kubernetes-workload-basics.md) | Cluster ⊃ Control/Data Plane ⊃ Node ⊃ Pod, 워크로드는 Deployment/StatefulSet/Job |
 | [K8s 컨트롤 플레인 (etcd/스케줄러/kubelet)](kubernetes-control-plane.md) | etcd가 진짜 진실의 원천 — 스케줄러는 "어디에", kubelet은 "실행"만 |
 | [K8s Service와 네트워킹](kubernetes-service-networking.md) | Pod IP(CNI)·Endpoints(목록)·iptables(실행 규칙)는 서로 다른 컴포넌트 |
@@ -92,6 +94,7 @@
 | [Record and replay](record-and-replay.md) | 시연해 자동화 — API 없는 시스템의 임시 다리, 표면 구조에 묶여 깨진다 |
 | [사용자 행동 로그 설계](event-tracking-design.md) | 계측(무엇을 남길지)과 판단(그걸로 뭘 결론 내릴지)은 별개 — 사후 보완이 안 돼 법무 검토급 필수 절차 |
 | [AI-DLC](ai-dlc.md) | AI가 계획·질문하고 사람(팀)이 검증한 뒤 구현 — 개인 승인이 아니라 팀 협업 의식이 중심 |
+| [FDE (Forward Deployed Engineer)](forward-deployed-engineer.md) | 팔란티어 유래 — 계약 후 고객 환경에서 프로덕션 코드를 짜고 교훈을 제품으로 환원하는 직무 |
 
 ## AI / ML
 

@@ -34,6 +34,8 @@
 
 ## 관련 개념
 - [최종 일관성 (Eventual Consistency)](eventual-consistency.md)
+- [메시지 큐와 SQS](message-queue-sqs.md) · [이중 쓰기 문제](dual-write-problem.md)
 
 ## 처음 나온 노트
 - [Nextree — 결재 연동 이벤트 핸들러](../reviews/2026-09-11-nextree-approval-event-handler.md)
+- 다시 나온 노트: [채널톡 — FDE 콜 캠페인](../reviews/2026-10-27-channel-fde-call-campaign.md) (되돌릴 수 없는 외부 부작용에서는 정확히 한 번이 불가능해, 재시도 쪽이라면 멱등성 키 필요)
