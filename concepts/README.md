@@ -67,6 +67,7 @@
 
 | 개념 | 한 줄 |
 |---|---|
+| [월 반복 결제의 앵커 날짜](billing-anchor-date.md) | 31일 가입자의 2월 처리 — 원래 일자로 복귀(클램프)냐 직전 결제일 연쇄(drift)냐가 총 이용일수를 가른다 |
 | [DDD / DDD-lite](ddd.md) | 비즈니스 개념 단위로 경계를 긋는 설계 — lite는 경계+계층+단방향 의존성만 가져온다 |
 | [최종 일관성 (Eventual Consistency)](eventual-consistency.md) | 즉시 일치를 포기하는 대신 장애 격리를 얻는 것 — 서비스별 DB 분리의 대가 |
 | [멱등성 (Idempotency)](idempotency.md) | 같은 요청 몇 번을 처리해도 결과가 같아야 함 — 비동기 전환은 이걸 세트로 요구한다 |
@@ -92,6 +93,7 @@
 | [에이전틱 워크플로우 루프](agentic-workflow-loop.md) | 위임·관찰·개입·검토 — 사람의 일이 코딩에서 루프 운영으로 이동 |
 | [완료 기준 (acceptance criteria)](acceptance-criteria.md) | 끝을 참/거짓 판정 가능한 문장으로 미리 쓴 것 — 미래의 수용 테스트 |
 | [Record and replay](record-and-replay.md) | 시연해 자동화 — API 없는 시스템의 임시 다리, 표면 구조에 묶여 깨진다 |
+| [테스트 오라클](test-oracle.md) | 기대값의 근거 — 구현과 같은 로직으로 다시 계산하면 같은 오해가 두 번 통과한다. 사람 계산표·불변식이 독립 근거 |
 | [사용자 행동 로그 설계](event-tracking-design.md) | 계측(무엇을 남길지)과 판단(그걸로 뭘 결론 내릴지)은 별개 — 사후 보완이 안 돼 법무 검토급 필수 절차 |
 | [AI-DLC](ai-dlc.md) | AI가 계획·질문하고 사람(팀)이 검증한 뒤 구현 — 개인 승인이 아니라 팀 협업 의식이 중심 |
 | [FDE (Forward Deployed Engineer)](forward-deployed-engineer.md) | 팔란티어 유래 — 계약 후 고객 환경에서 프로덕션 코드를 짜고 교훈을 제품으로 환원하는 직무 |
