@@ -26,7 +26,7 @@ iptables는 목록을 저장하는 곳이 아니라, **kube-proxy가 Endpoints �
 
 ## Ingress / Gateway API
 
-클러스터 **바깥**에서 들어오는 트래픽을 어떤 Service로 보낼지 정하는 L7 규칙(도메인/경로 기반). Gateway API는 Ingress의 차세대 표준이고, **GAIE(Gateway API Inference Extension)**는 여기에 추론 특화 라우팅 규칙(캐시 친화도, 큐 깊이 등)을 얹은 확장이다.
+클러스터 **바깥**에서 들어오는 트래픽을 어떤 Service로 보낼지 정하는 L7 규칙(도메인/경로 기반) — 규칙과 실행(Controller)의 구분, YAML 예시는 [K8s Ingress](kubernetes-ingress.md). Gateway API는 Ingress의 차세대 표준이고, **GAIE(Gateway API Inference Extension)**는 여기에 추론 특화 라우팅 규칙(캐시 친화도, 큐 깊이 등)을 얹은 확장이다.
 
 ## 왜 LLM 서빙에서 문제가 되나
 

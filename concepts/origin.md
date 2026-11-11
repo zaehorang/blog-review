@@ -10,5 +10,5 @@
 
 DNS→엣지 라우팅([CDN](cdn.md))과 [CSRF](csrf.md)의 origin 검증(서버가 요청 헤더 판단)은 **서로 무관한 별개 시스템**이다.
 
-**관련:** [CDN](cdn.md) · [CSRF](csrf.md)
+**관련:** [CDN](cdn.md) · [CSRF](csrf.md) · [CORS](cors.md) (출처가 다를 때 응답을 읽게 허용하는 규약)
 **나온 곳:** [올리브영 Vue Web Components](../reviews/2026-08-04-oliveyoung-vue-web-components.md)

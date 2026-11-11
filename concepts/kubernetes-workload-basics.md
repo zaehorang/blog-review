@@ -18,5 +18,17 @@
 
 **전체 포함 관계:** Cluster(전체) ⊃ Control Plane + Data Plane(Node들) ⊃ Node(서버) ⊃ Pod(컨테이너 묶음)
 
-**관련:** [K8s 컨트롤 플레인](kubernetes-control-plane.md) · [K8s Service와 네트워킹](kubernetes-service-networking.md) · [Docker 컨테이너 기본](docker-container-basics.md)
-**처음 나온 노트:** [SK DEVOCEAN — 쿠버네티스로 여는 AI 추론 인프라](../reviews/2026-09-28-devocean-k8s-inference.md)
+## 선언형 설정 — compose YAML vs k8s YAML
+
+둘 다 **"원하는 상태를 적어 두면 도구가 그렇게 만들어 주는"** 선언형 설정 파일이다. 차이는 범위.
+
+| | docker-compose.yml | k8s YAML |
+|---|---|---|
+| 범위 | 컨테이너를 **한 대**의 머신에 | 컨테이너를 **여러 머신**(클러스터)에 |
+| 선언하는 것 | 어떤 컨테이너를 어떤 포트로 | 몇 개 유지(Deployment), 고정 주소(Service), 외부 라우팅([Ingress](kubernetes-ingress.md)) 등 |
+| 어긋나면 | 직접 다시 올림 | k8s가 선언한 상태로 **계속 되돌려 놓음**(죽은 Pod 재생성 등) |
+
+누가 쓰나: 비즈니스 로직은 BE, k8s config는 보통 devops, 운영 기준은 SRE가 잡는다 — 다만 현실에선 **칼같이 나뉘지 않고** BE가 직접 만지는 일도 많다.
+
+**관련:** [K8s 컨트롤 플레인](kubernetes-control-plane.md) · [K8s Service와 네트워킹](kubernetes-service-networking.md) · [K8s Ingress](kubernetes-ingress.md) · [Docker 컨테이너 기본](docker-container-basics.md)
+**처음 나온 노트:** [SK DEVOCEAN — 쿠버네티스로 여는 AI 추론 인프라](../reviews/2026-09-28-devocean-k8s-inference.md) · 선언형 설정 절은 [이랜서 — Nginx 앞단](../reviews/2026-11-11-elancer-nginx-reverse-proxy.md)

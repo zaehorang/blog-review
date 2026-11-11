@@ -55,6 +55,11 @@
 | [네트워크 계층 (TCP/IP 4계층)](network-layers.md) | REST·RPC 비교가 헷갈리는 이유 — 설계 스타일과 프로토콜과 전송을 같은 선상에 놓아서 |
 | [TCP vs UDP](tcp-vs-udp.md) | TCP는 원래 양방향 — "가능한가"와 "그 능력을 쓰기로 약속했나"는 다른 질문 |
 | [HTTP](http.md) | 해결한 건 "연결 반복"이 아니라 **메시지 형식의 표준화** |
+| [리버스 프록시 / 게이트웨이](reverse-proxy.md) | 정의는 분산이 아니라 서버의 대리인 — 필수인 건 Nginx가 아니라 "앞단 계층이라는 역할", 필요는 서비스가 몇 개로 쪼개졌나가 정한다 |
+| [이벤트 기반 동시성](event-driven-concurrency.md) | 줄어드는 건 일이 아니라 **기다리는 연결의 비용** — 연결 많고 대부분 대기일 때 이득, 분산과는 독립 |
+| [HTTPS와 TLS 종료](tls-termination.md) | 앞단이 암호화를 풀어야 L7 라우팅이 되고, 대가로 내부는 평문 + 앱이 원래 https였는지 모른다 |
+| [HTTP 리다이렉트와 루프](http-redirect.md) | 앞단이 TLS를 풀면 앱은 http로 받아 또 https로 보낸다 — `X-Forwarded-Proto`로 알려줘야 끊긴다 |
+| [CORS](cors.md) | 출처가 다르면 브라우저가 응답을 못 읽게 막는 것 — 한 주소로 묶으면 규칙 자체가 필요 없어진다 |
 | [REST](rest.md) | 프로토콜이 아니라 설계 스타일 — URI(명사)+HTTP 메서드(동사), 느슨한 결합 |
 | [RPC](rpc.md) | 원격 함수를 로컬처럼 호출한다는 패러다임 — gRPC는 그 구체적 구현체 |
 | [gRPC](grpc.md) | 결합은 긴밀해지지만 그만큼 성능과 스트리밍을 얻는 트레이드오프 |
@@ -76,6 +81,7 @@
 | [K8s 기본 구조 (Pod/Node/Cluster/워크로드)](kubernetes-workload-basics.md) | Cluster ⊃ Control/Data Plane ⊃ Node ⊃ Pod, 워크로드는 Deployment/StatefulSet/Job |
 | [K8s 컨트롤 플레인 (etcd/스케줄러/kubelet)](kubernetes-control-plane.md) | etcd가 진짜 진실의 원천 — 스케줄러는 "어디에", kubelet은 "실행"만 |
 | [K8s Service와 네트워킹](kubernetes-service-networking.md) | Pod IP(CNI)·Endpoints(목록)·iptables(실행 규칙)는 서로 다른 컴포넌트 |
+| [K8s Ingress와 Controller](kubernetes-ingress.md) | Ingress는 규칙(선언), Controller(Traefik/Nginx)가 실행 — 경로(엔드포인트)와 서비스(배포 단위)는 다른 층위 |
 | [Docker 컨테이너 기본](docker-container-basics.md) | Image는 템플릿, Container는 실행 인스턴스, Runtime이 실제로 띄운다 |
 
 ## 개발 프로세스 / 도구

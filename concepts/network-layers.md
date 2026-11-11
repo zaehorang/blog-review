@@ -20,5 +20,21 @@ REST·RPC·gRPC·HTTP·TCP를 한 줄에 놓고 비교하면 헷갈린다 — �
 [전송]           TCP
 ```
 
-**관련:** [HTTP](http.md) · [REST](rest.md) · [RPC](rpc.md) · [gRPC](grpc.md)
-**처음 나온 노트:** [AWS — gRPC vs REST](../reviews/2026-09-22-aws-grpc-rest.md)
+## L4 / L7 — OSI 번호와 로드밸런서
+
+OSI 번호로 부르면 **L7 = 응용 계층(HTTP)**, **L4 = 전송 계층(TCP/UDP + 포트)**, L3 = IP. 한 요청이 지나는 순서:
+
+```
+L3  IP        ① DNS로 example.com → 1.2.3.4 (어느 컴퓨터로)
+L4  TCP/포트  ② 1.2.3.4의 443번 포트와 TCP 연결 (어느 프로그램에게, 믿을 수 있게)
+    TLS       ③ 암호화 협상 (HTTPS의 'S')
+L7  HTTP      ④ "GET /api/users, Host: example.com" 전송 (요청 내용)
+```
+
+- **L4 로드밸런서:** IP·포트만 보고 뒤로 넘긴다. 내용은 안 열어서 빠르고 단순하지만 `/api`와 `/auth`를 구분하지 못한다. (K8s Service가 이 수준)
+- **L7 로드밸런서:** HTTP를 읽고 경로·호스트·헤더로 라우팅한다. Nginx, K8s [Ingress](kubernetes-ingress.md)가 여기.
+- **L7로 경로를 읽으려면 먼저 암호화를 풀어야 한다** → [TLS 종료](tls-termination.md).
+- "라우팅"(어디로 보낼지 *내용*으로 판단)은 L7이 있어야 하고, "분산"(여러 대에 나눔)은 L4로도 된다 — 둘은 다른 기능.
+
+**관련:** [HTTP](http.md) · [REST](rest.md) · [RPC](rpc.md) · [gRPC](grpc.md) · [리버스 프록시](reverse-proxy.md) · [TLS 종료](tls-termination.md) · [K8s Ingress](kubernetes-ingress.md)
+**처음 나온 노트:** [AWS — gRPC vs REST](../reviews/2026-09-22-aws-grpc-rest.md) · L4/L7 절은 [이랜서 — Nginx 앞단](../reviews/2026-11-11-elancer-nginx-reverse-proxy.md)

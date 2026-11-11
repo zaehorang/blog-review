@@ -13,5 +13,5 @@
 
 API 서버는 짧은 요청 처리량, 소켓 서버는 동시 장기 연결 수, 게이트웨이는 서버 위치·상태·분할 정책이 주요 확장 조건이다. 역할을 나누면 각각 독립적으로 확장하고 장애를 격리할 수 있다.
 
-**관련:** [WebSocket](websocket.md)
+**관련:** [WebSocket](websocket.md) · [리버스 프록시 / 게이트웨이](reverse-proxy.md) (여러 서비스를 한 주소로 묶는 쪽의 게이트웨이)
 **나온 곳:** [채널톡 RxJS 사이드 이펙트](../reviews/2026-08-13-channel-rxjs-side-effects.md)
